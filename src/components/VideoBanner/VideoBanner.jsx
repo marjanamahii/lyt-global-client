@@ -24,8 +24,8 @@ const VideoBanner = () => {
             goals and succeed in life.
           </p>
 
-          {/* "ineed to add doamin here/registration/"  */}
-          <a href="/registration" rel="noreferrer">
+          {/* "ineed to add doamin here/register/"  */}
+          <a href="/register" rel="noreferrer">
             <button className="glow-on-hover vidHeaderBtn">Apply Now</button>
           </a>
         </div>

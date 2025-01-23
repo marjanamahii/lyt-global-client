@@ -9,7 +9,7 @@ import "./HeaderNav.css";
 function HeaderNav() {
   const navigate = useNavigate();
   const handleRegistrationClick = () => {
-    window.location.href = "/registration";
+    window.location.href = "/register";
   };
 
   return (

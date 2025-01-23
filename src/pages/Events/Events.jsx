@@ -101,7 +101,7 @@ const Events = () => {
                   {/* <p>Entry- FREE ! (Registration Required)</p> */}
 
                   <button class="glow-on-hover" type="button" disabled>
-                    <Link className="eventRegBtn" to="/registration">
+                    <Link className="eventRegBtn" to="/register">
                       APPLY NOW
                     </Link>
                   </button>

@@ -38,7 +38,7 @@ const Registration = () => {
       {/* this is for test */}
       {/* <div style={{ position: 'relative', width: '100%', height: 0, paddingBottom: '56.25%', overflow: 'hidden' }}>
                 <iframe
-                    src="https://app.shabujglobal.com/registration/student"
+                    src="https://app.shabujglobal.com/register/student"
                     style={{ position: 'absolute', width: '100%', height: '100%', left: 0, top: 0 }}
                     frameBorder="0"
                     marginHeight="0"
@@ -75,7 +75,7 @@ const Registration = () => {
           </div>
         )}
         <iframe
-          src="https://app.shabujglobal.com/registration/student"
+          src="https://app.shabujglobal.com/register/student"
           scrolling="no"
           style={{
             position: "absolute",
@@ -145,7 +145,7 @@ const Registration = () => {
                     </div>
                 )}
                 <iframe
-                    src="https://app.shabujglobal.com/registration/student"
+                    src="https://app.shabujglobal.com/register/student"
                     style={{ position: 'absolute', width: '100%', height: '100%', left: 0, top: 0 }}
                     frameBorder="0"
                     marginHeight="0"

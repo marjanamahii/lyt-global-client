@@ -23,10 +23,13 @@ const router = createBrowserRouter([
       { path: "/services", element: <Services></Services> },
       { path: "/events", element: <Events></Events> },
       {
-        path: "/registration",
+        path: "/register",
         element: <Register />,
       },
-      // { path: "/registration", element: <Registration></Registration> },
+      {
+        path: "/login",
+        element: <Login />,
+      },
       // { path: "/search", element: <Search /> },
       // { path: "/shop", element: <ShopPage /> },
       // { path: "/shop/:id", element: <SingleProduct /> },
@@ -39,10 +42,6 @@ const router = createBrowserRouter([
       //   element: <OrderDetails />,
       // },
     ],
-  },
-  {
-    path: "/login",
-    element: <Login />,
   },
 
   // {
