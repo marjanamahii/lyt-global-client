@@ -116,7 +116,7 @@ const Footer = () => {
         {/* Global Branches */}
         <Row className="text-center border-top border-gray-500 pt-3">
           <Col>
-            <p>
+            <p className="text-white">
               Our Global Branches:
               <a
                 href="/global-offices/united-kingdom"
