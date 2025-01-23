@@ -1,0 +1,17 @@
+.no-underline-link {
+  text-decoration: none;
+}
+.uniHeading {
+  color: #29a469;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 60px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #000; /* Dark background for the buttons */
+  color: #fff; /* White text for the arrows */
+  border-radius: 50%; /* Round buttons */
+  width: 40px; /* Adjust button size */
+  height: 40px; /* Adjust button size */
+}

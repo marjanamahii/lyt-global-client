@@ -1,0 +1,26 @@
+.thumb {
+  margin-bottom: 15px;
+}
+
+.thumb:last-child {
+  margin-bottom: 0;
+}
+
+.thumb figure img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.thumb figure:hover img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.galleryHeading {
+  color: #29a469;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 60px;
+}
