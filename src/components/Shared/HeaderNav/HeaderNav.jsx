@@ -77,7 +77,7 @@ function HeaderNav() {
                 Contact
               </Link>
               <Link className="myNav" to="/register">
-                Registration
+                Register
               </Link>
               {/* <Link className="myNav" to="/blogs">
                 Blog
