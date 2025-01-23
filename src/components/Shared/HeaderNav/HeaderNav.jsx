@@ -9,7 +9,7 @@ import "./HeaderNav.css";
 function HeaderNav() {
   const navigate = useNavigate();
   const handleRegistrationClick = () => {
-    window.location.href = "/register";
+    window.location.href = "/registration";
   };
 
   return (
@@ -76,15 +76,18 @@ function HeaderNav() {
               <Link className="myNav" to="/contact">
                 Contact
               </Link>
+              <Link className="myNav" to="/register">
+                Registration
+              </Link>
               {/* <Link className="myNav" to="/blogs">
                 Blog
               </Link> */}
-              <button
+              {/* <button
                 className="myNav navBtn"
                 onClick={handleRegistrationClick}
               >
                 Registration
-              </button>
+              </button> */}
               {/* <a
                 className="myNav"
                 target="_blank"
