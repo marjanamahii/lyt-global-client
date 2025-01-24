@@ -6,6 +6,7 @@ import CounterSection from "../../components/CounterSection/CounterSection";
 import Gallery from "../../components/Gallery/Gallery";
 import Partners from "../../components/Partners/Parteners";
 import FAQS from "../../components/FAQS/FAQS";
+import SearchBar from "../../components/SearchBar/SearchBar";
 
 const Home = () => {
   useEffect(() => {
@@ -15,6 +16,7 @@ const Home = () => {
     <div>
       <HeaderNav></HeaderNav>
       <VideoBanner></VideoBanner>
+      <SearchBar></SearchBar>
       <Partners></Partners>
       <CounterSection></CounterSection>
       <Gallery></Gallery>

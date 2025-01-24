@@ -1,0 +1,8 @@
+.custom-tabs .nav-link {
+  color: black;
+  font-weight: bold;
+}
+
+.custom-tabs .nav-link.active {
+  color: green !important;
+}
