@@ -79,7 +79,8 @@ const ContactUs = () => {
             <Col xl="6" md="6">
               <Card className="bg-light p-4 border-0 shadow-sm">
                 <Form onSubmit={onSubmit}>
-                  <h1 className="h3 font-bold mb-4">Send us a message</h1>
+                  <h1>If you have any Query</h1>
+                  <h1 className="h3 font-semibold mb-4">Send us a message</h1>
                   <Row>
                     <Col md="6">
                       <FloatingLabel

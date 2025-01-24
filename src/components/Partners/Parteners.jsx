@@ -5,14 +5,14 @@ import { Container } from "react-bootstrap";
 import "./Partners.css";
 
 import i1 from "../../assets/unilist/uni1.png";
-import i2 from "../../assets/unilist/uni1.png";
-import i3 from "../../assets/unilist/uni1.png";
-import i4 from "../../assets/unilist/uni1.png";
-import i5 from "../../assets/unilist/uni1.png";
-import i6 from "../../assets/unilist/uni1.png";
-import i7 from "../../assets/unilist/uni1.png";
-import i8 from "../../assets/unilist/uni1.png";
-import i9 from "../../assets/unilist/uni1.png";
+import i2 from "../../assets/unilist/birmingham.png";
+import i3 from "../../assets/unilist/cantebury.png";
+import i4 from "../../assets/unilist/cardiff.png";
+import i5 from "../../assets/unilist/cityuni.png";
+import i6 from "../../assets/unilist/coventry.png";
+import i7 from "../../assets/unilist/demont.png";
+import i8 from "../../assets/unilist/law.png";
+import i9 from "../../assets/unilist/ua.png";
 import i10 from "../../assets/unilist/uni1.png";
 import i11 from "../../assets/unilist/uni1.png";
 import i13 from "../../assets/unilist/uni1.png";
@@ -96,7 +96,7 @@ const Partners = () => {
             <div className="mx-1">
               <img src={i10} alt="img" />
             </div>
-            <div className="mx-1">
+            {/* <div className="mx-1">
               <img src={i11} alt="img" />
             </div>
             <div className="mx-1">
@@ -120,9 +120,6 @@ const Partners = () => {
             <div className="mx-1">
               <img src={i51} alt="img" />
             </div>
-            {/* <div className='mx-1'>
-                            <img src={i18} alt="img" />
-                        </div> */}
             <div className="mx-1">
               <img src={i19} alt="img" />
             </div>
@@ -218,7 +215,7 @@ const Partners = () => {
             </div>
             <div className="mx-1">
               <img src={i48} alt="img" />
-            </div>
+            </div> */}
           </Marquee>
         </div>
       </Link>
