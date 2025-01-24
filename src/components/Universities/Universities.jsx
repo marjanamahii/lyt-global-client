@@ -176,6 +176,33 @@ const Universities = () => {
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
                     <Accordion.Header>
+                      <img className="w-50" src={i6} alt="" />
+                    </Accordion.Header>
+                    <Accordion.Body className="accordion-body-custom">
+                      <p>
+                        A world top 100 university and part of the prestigious
+                        Russell Group, the University of Birmingham makes
+                        important things happen.
+                      </p>
+                      <a
+                        href="https://www.birmingham.ac.uk/"
+                        target={"_blank"}
+                        rel="noreferrer"
+                        className="primaryBtn"
+                      >
+                        Details
+                      </a>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
+              </div>
+            </div>
+
+            <div className="col-xl-3 col-sm-6 col-12">
+              <div className=" d-flex">
+                <Accordion alwaysOpen>
+                  <Accordion.Item eventKey="0">
+                    <Accordion.Header>
                       <img className="w-50" src={i1} alt="" />
                     </Accordion.Header>
                     <Accordion.Body className="accordion-body-custom">
@@ -187,6 +214,143 @@ const Universities = () => {
                       </p>
                       <a
                         href="https://www.abdn.ac.uk/"
+                        target={"_blank"}
+                        rel="noreferrer"
+                        className="primaryBtn"
+                      >
+                        Details
+                      </a>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
+              </div>
+            </div>
+
+            <div className="col-xl-3 col-sm-6 col-12">
+              <div className=" d-flex">
+                <Accordion alwaysOpen>
+                  <Accordion.Item eventKey="0">
+                    <Accordion.Header>
+                      <img className="w-50" src={i52} alt="" />
+                    </Accordion.Header>
+                    <Accordion.Body className="accordion-body-custom">
+                      <p>
+                        Find your perfect course at a supportive, friendly
+                        university ranked 1se in the UK for graduates in
+                        employment (HESA: Graduate Outcomes 2023).
+                      </p>
+                      <a
+                        href="https://www.canterbury.ac.uk/"
+                        target={"_blank"}
+                        rel="noreferrer"
+                        className="primaryBtn"
+                      >
+                        Details
+                      </a>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
+              </div>
+            </div>
+
+            <div className="col-xl-3 col-sm-6 col-12">
+              <div className=" d-flex">
+                <Accordion alwaysOpen>
+                  <Accordion.Item eventKey="0">
+                    <Accordion.Header>
+                      <img className="w-50" src={i10} alt="" />
+                    </Accordion.Header>
+                    <Accordion.Body className="accordion-body-custom">
+                      <p>
+                        Cardiff Metropolitan University, UK & Ireland University
+                        of the Year 2021*. Times Higher Education Awards.
+                        Located in the lively capital city of Wales.
+                      </p>
+                      <a
+                        href="https://www.cardiffmet.ac.uk/"
+                        target={"_blank"}
+                        rel="noreferrer"
+                        className="primaryBtn"
+                      >
+                        Details
+                      </a>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
+              </div>
+            </div>
+
+            <div className="col-xl-3 col-sm-6 col-12">
+              <div className=" d-flex">
+                <Accordion alwaysOpen>
+                  <Accordion.Item eventKey="0">
+                    <Accordion.Header>
+                      <img className="w-50" src={i11} alt="" />
+                    </Accordion.Header>
+                    <Accordion.Body className="accordion-body-custom">
+                      <p>
+                        Official Coventry University Details with information
+                        about undergraduate degrees, postgraduate degrees,
+                        student recruitment, the academic schools, ...
+                      </p>
+                      <a
+                        href="https://www.coventry.ac.uk/"
+                        target={"_blank"}
+                        rel="noreferrer"
+                        className="primaryBtn"
+                      >
+                        Details
+                      </a>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
+              </div>
+            </div>
+
+            <div className="col-xl-3 col-sm-6 col-12">
+              <div className=" d-flex">
+                <Accordion alwaysOpen>
+                  <Accordion.Item eventKey="0">
+                    <Accordion.Header>
+                      <img className="w-50" src={i13} alt="" />
+                    </Accordion.Header>
+                    <Accordion.Body className="accordion-body-custom">
+                      <p>
+                        A UK University offering more than 300 courses at
+                        Bachelors and Masters level. Find out more about life at
+                        De Montfort University for International students. First
+                        className Support.
+                      </p>
+                      <a
+                        href="https://www.dmu.ac.uk/"
+                        target={"_blank"}
+                        rel="noreferrer"
+                        className="primaryBtn"
+                      >
+                        Details
+                      </a>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
+              </div>
+            </div>
+
+            <div className="col-xl-3 col-sm-6 col-12">
+              <div className=" d-flex">
+                <Accordion alwaysOpen>
+                  <Accordion.Item eventKey="0">
+                    <Accordion.Header>
+                      <img className="w-50" src={i20} alt="" />
+                    </Accordion.Header>
+                    <Accordion.Body className="accordion-body-custom">
+                      <p>
+                        Our Dedicated Team Are Happy To Help With Any Queries
+                        Regarding Your Application At GCU. Award-Winning Support
+                        For International Students At The University. Apply
+                        Today.
+                      </p>
+                      <a
+                        href="https://www.gcu.ac.uk/"
                         target={"_blank"}
                         rel="noreferrer"
                         className="primaryBtn"
@@ -287,33 +451,6 @@ const Universities = () => {
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
                     <Accordion.Header>
-                      <img className="w-50" src={i6} alt="" />
-                    </Accordion.Header>
-                    <Accordion.Body className="accordion-body-custom">
-                      <p>
-                        A world top 100 university and part of the prestigious
-                        Russell Group, the University of Birmingham makes
-                        important things happen.
-                      </p>
-                      <a
-                        href="https://www.birmingham.ac.uk/"
-                        target={"_blank"}
-                        rel="noreferrer"
-                        className="primaryBtn"
-                      >
-                        Details
-                      </a>
-                    </Accordion.Body>
-                  </Accordion.Item>
-                </Accordion>
-              </div>
-            </div>
-
-            <div className="col-xl-3 col-sm-6 col-12">
-              <div className=" d-flex">
-                <Accordion alwaysOpen>
-                  <Accordion.Item eventKey="0">
-                    <Accordion.Header>
                       <img className="w-50" src={i7} alt="" />
                     </Accordion.Header>
                     <Accordion.Body className="accordion-body-custom">
@@ -368,33 +505,6 @@ const Universities = () => {
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
                     <Accordion.Header>
-                      <img className="w-50" src={i52} alt="" />
-                    </Accordion.Header>
-                    <Accordion.Body className="accordion-body-custom">
-                      <p>
-                        Find your perfect course at a supportive, friendly
-                        university ranked 1se in the UK for graduates in
-                        employment (HESA: Graduate Outcomes 2023).
-                      </p>
-                      <a
-                        href="https://www.canterbury.ac.uk/"
-                        target={"_blank"}
-                        rel="noreferrer"
-                        className="primaryBtn"
-                      >
-                        Details
-                      </a>
-                    </Accordion.Body>
-                  </Accordion.Item>
-                </Accordion>
-              </div>
-            </div>
-
-            <div className="col-xl-3 col-sm-6 col-12">
-              <div className=" d-flex">
-                <Accordion alwaysOpen>
-                  <Accordion.Item eventKey="0">
-                    <Accordion.Header>
                       <img className="w-50" src={i9} alt="" />
                     </Accordion.Header>
                     <Accordion.Body className="accordion-body-custom">
@@ -405,60 +515,6 @@ const Universities = () => {
                       </p>
                       <a
                         href="https://www.brighton.ac.uk/"
-                        target={"_blank"}
-                        rel="noreferrer"
-                        className="primaryBtn"
-                      >
-                        Details
-                      </a>
-                    </Accordion.Body>
-                  </Accordion.Item>
-                </Accordion>
-              </div>
-            </div>
-
-            <div className="col-xl-3 col-sm-6 col-12">
-              <div className=" d-flex">
-                <Accordion alwaysOpen>
-                  <Accordion.Item eventKey="0">
-                    <Accordion.Header>
-                      <img className="w-50" src={i10} alt="" />
-                    </Accordion.Header>
-                    <Accordion.Body className="accordion-body-custom">
-                      <p>
-                        Cardiff Metropolitan University, UK & Ireland University
-                        of the Year 2021*. Times Higher Education Awards.
-                        Located in the lively capital city of Wales.
-                      </p>
-                      <a
-                        href="https://www.cardiffmet.ac.uk/"
-                        target={"_blank"}
-                        rel="noreferrer"
-                        className="primaryBtn"
-                      >
-                        Details
-                      </a>
-                    </Accordion.Body>
-                  </Accordion.Item>
-                </Accordion>
-              </div>
-            </div>
-
-            <div className="col-xl-3 col-sm-6 col-12">
-              <div className=" d-flex">
-                <Accordion alwaysOpen>
-                  <Accordion.Item eventKey="0">
-                    <Accordion.Header>
-                      <img className="w-50" src={i11} alt="" />
-                    </Accordion.Header>
-                    <Accordion.Body className="accordion-body-custom">
-                      <p>
-                        Official Coventry University Details with information
-                        about undergraduate degrees, postgraduate degrees,
-                        student recruitment, the academic schools, ...
-                      </p>
-                      <a
-                        href="https://www.coventry.ac.uk/"
                         target={"_blank"}
                         rel="noreferrer"
                         className="primaryBtn"
@@ -513,34 +569,6 @@ const Universities = () => {
                       </p>
                       <a
                         href="https://www.devry.edu/"
-                        target={"_blank"}
-                        rel="noreferrer"
-                        className="primaryBtn"
-                      >
-                        Details
-                      </a>
-                    </Accordion.Body>
-                  </Accordion.Item>
-                </Accordion>
-              </div>
-            </div>
-
-            <div className="col-xl-3 col-sm-6 col-12">
-              <div className=" d-flex">
-                <Accordion alwaysOpen>
-                  <Accordion.Item eventKey="0">
-                    <Accordion.Header>
-                      <img className="w-50" src={i13} alt="" />
-                    </Accordion.Header>
-                    <Accordion.Body className="accordion-body-custom">
-                      <p>
-                        A UK University offering more than 300 courses at
-                        Bachelors and Masters level. Find out more about life at
-                        De Montfort University for International students. First
-                        className Support.
-                      </p>
-                      <a
-                        href="https://www.dmu.ac.uk/"
                         target={"_blank"}
                         rel="noreferrer"
                         className="primaryBtn"
@@ -676,34 +704,6 @@ const Universities = () => {
                       </p>
                       <a
                         href="https://www.exeter.ac.uk/"
-                        target={"_blank"}
-                        rel="noreferrer"
-                        className="primaryBtn"
-                      >
-                        Details
-                      </a>
-                    </Accordion.Body>
-                  </Accordion.Item>
-                </Accordion>
-              </div>
-            </div>
-
-            <div className="col-xl-3 col-sm-6 col-12">
-              <div className=" d-flex">
-                <Accordion alwaysOpen>
-                  <Accordion.Item eventKey="0">
-                    <Accordion.Header>
-                      <img className="w-50" src={i20} alt="" />
-                    </Accordion.Header>
-                    <Accordion.Body className="accordion-body-custom">
-                      <p>
-                        Our Dedicated Team Are Happy To Help With Any Queries
-                        Regarding Your Application At GCU. Award-Winning Support
-                        For International Students At The University. Apply
-                        Today.
-                      </p>
-                      <a
-                        href="https://www.gcu.ac.uk/"
                         target={"_blank"}
                         rel="noreferrer"
                         className="primaryBtn"
