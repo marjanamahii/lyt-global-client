@@ -1,16 +1,58 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-// import NavDropdown from "react-bootstrap/NavDropdown";
+import avatarImg from "../../../assets/images/avatar.png";
 import logo1 from "../../../assets/images/lyt.png";
 import { Link, useNavigate } from "react-router-dom";
 import "./HeaderNav.css";
+import { useDispatch, useSelector } from "react-redux";
+import { useLogoutUserMutation } from "../../../redux/Features/Auth/AuthApi";
+import { useState } from "react";
+import { Dropdown, Image } from "react-bootstrap";
+import { logout } from "../../../redux/Features/Auth/AuthSlice";
 
 function HeaderNav() {
   const navigate = useNavigate();
   // const handleRegistrationClick = () => {
   //   window.location.href = "/registration";
   // };
+
+  // show user if logged in
+  const dispatch = useDispatch();
+  const { user } = useSelector((state) => state.auth);
+  const [logoutUser] = useLogoutUserMutation();
+
+  // dropdowns menu
+  const [isDropDownOpen, setIsDropDownOpen] = useState(false);
+  const handleDropDownToggle = () => {
+    setIsDropDownOpen(!isDropDownOpen);
+  };
+
+  // admin dropdown menus
+  const adminDropDownMenus = [
+    { label: "Dashboard", path: "/dashboard/admin" },
+    { label: "Manage University", path: "/dashboard/manage-university" },
+    { label: "All Users", path: "/dashboard/manage-users" },
+    { label: "Add University", path: "/dashboard/add-university" },
+  ];
+  // user dropdown menus
+  const userDropDownMenus = [
+    { label: "Dashboard", path: "/dashboard" },
+    { label: "Profile", path: "/dashboard/profile" },
+  ];
+
+  const dropdownMenus =
+    user?.role === "admin" ? [...adminDropDownMenus] : [...userDropDownMenus];
+
+  const handleLogout = async () => {
+    try {
+      await logoutUser().unwrap(); // Logs out from the server
+      dispatch(logout()); // Clears Redux state
+      navigate("/login"); // Redirects to the login page
+    } catch (error) {
+      console.log("Failed to log out", error); // Handles errors gracefully
+    }
+  };
 
   return (
     <div className="">
@@ -96,14 +138,70 @@ function HeaderNav() {
               >
                 Login
               </a> */}
-              <a
+              {/* <a
                 className="myNav"
                 target="_blank"
                 href="/login"
                 rel="noreferrer"
               >
                 Login
-              </a>
+              </a> */}
+              {user ? (
+                <>
+                  <Image
+                    onClick={handleDropDownToggle}
+                    src={user?.profileImage || avatarImg}
+                    alt="User Profile"
+                    className="cursor-pointer z-10"
+                    roundedCircle
+                    style={{
+                      width: "35px", // Adjust the size to match your design
+                      height: "35px",
+                      objectFit: "cover", // Ensures the image fills the circle
+                      boxShadow: "0 2px 6px rgba(0, 0, 0, 0.2)", // Optional: Add a shadow for better appearance
+                    }}
+                  />
+
+                  <Dropdown
+                    align="end"
+                    show={isDropDownOpen}
+                    onToggle={setIsDropDownOpen}
+                  >
+                    <Dropdown.Menu
+                      className="p-2 shadow-lg"
+                      style={{ minWidth: "12rem" }}
+                    >
+                      {dropdownMenus.map((menu, index) => (
+                        <Dropdown.Item
+                          key={index}
+                          as={Link}
+                          to={menu.path}
+                          onClick={() => setIsDropDownOpen(false)}
+                          className="dropdown-items"
+                        >
+                          {menu.label}
+                        </Dropdown.Item>
+                      ))}
+                      <Dropdown.Divider />
+                      <Dropdown.Item
+                        onClick={handleLogout}
+                        className="dropdown-items"
+                      >
+                        Logout
+                      </Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                </>
+              ) : (
+                <a
+                  className="myNav"
+                  target="_blank"
+                  href="/login"
+                  rel="noreferrer"
+                >
+                  Login
+                </a>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>
