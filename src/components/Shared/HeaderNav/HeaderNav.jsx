@@ -28,7 +28,7 @@ function HeaderNav() {
             </Link>
           </Navbar.Brand> */}
           <Navbar.Brand
-            style={{ color: "#29a469" }}
+            style={{ color: "black" }}
             className="d-flex justify-between align-items-center w-100 font-semibold"
           >
             <img
