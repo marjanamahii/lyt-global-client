@@ -6,3 +6,14 @@
 .custom-tabs .nav-link.active {
   color: green !important;
 }
+.search-input {
+  position: relative; /* Make the input field a container for the icon */
+}
+
+.search-icon {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}

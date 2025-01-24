@@ -6618,6 +6618,15 @@ fieldset:disabled .btn {
 
 .accordion-body {
   padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures consistent spacing */
+  height: 200px;
+  text-align: center;
+}
+.accordion-body p {
+  flex-grow: 1; /* Pushes the button down */
+  margin-bottom: 1rem; /* Adds spacing between text and button */
 }
 
 .accordion-flush .accordion-collapse {

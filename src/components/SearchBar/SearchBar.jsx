@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Tab, Tabs, Form, Button, Container, Row, Col } from "react-bootstrap";
 import "./SearchBar.css";
+import { FaSearch } from "react-icons/fa";
 
 const SearchBar = () => {
   const [showSearchDetails, setShowSearchDetails] = useState(false);
@@ -15,12 +16,21 @@ const SearchBar = () => {
   return (
     <Container className="mt-5">
       {/* Search Bar */}
-      <div className="position-relative mx-auto d-flex justify-content-center">
+      <div className="position-relative mx-auto d-flex  justify-content-center content-center">
         <Form.Control
           type="search"
           placeholder="Search"
-          className="rounded-pill ps-5 w-50"
+          className="rounded-pill absolute ps-5 w-50"
           style={{ height: "40px" }}
+          onClick={handleSearchClick}
+        />
+        <FaSearch
+          className="search-icon position-absolute"
+          style={{
+            top: "50%",
+            left: "5px",
+            transform: "translateY(-50%)", // Centers the icon vertically
+          }}
           onClick={handleSearchClick}
         />
       </div>

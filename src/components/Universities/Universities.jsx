@@ -3,26 +3,25 @@ import React, { useEffect } from "react";
 import HeaderNav from "../Shared/HeaderNav/HeaderNav";
 // import BlogBg from "../../assets/blogBg.jpg";
 import u1 from "../../assets/unilist/uni1.png";
-import i1 from "../../assets/images/lyt-logo.jpg";
-import i2 from "../../assets/images/lyt-logo.jpg";
+import i1 from "../../assets/unilist/ua.png";
+import i2 from "../../assets/unilist/ua.png";
 import i3 from "../../assets/images/lyt-logo.jpg";
 import i4 from "../../assets/images/lyt-logo.jpg";
 import i5 from "../../assets/images/lyt-logo.jpg";
-import i6 from "../../assets/images/lyt-logo.jpg";
+import i6 from "../../assets/unilist/birmingham.png";
 import i7 from "../../assets/images/lyt-logo.jpg";
 import i8 from "../../assets/images/lyt-logo.jpg";
 import i9 from "../../assets/images/lyt-logo.jpg";
-import i10 from "../../assets/images/lyt-logo.jpg";
-import i11 from "../../assets/images/lyt-logo.jpg";
-// import i12 from '../../assets/Uni Logo update/12.png'
-import i13 from "../../assets/images/lyt-logo.jpg";
+import i10 from "../../assets/unilist/cardiff.png";
+import i11 from "../../assets/unilist/coventry.png";
+import i13 from "../../assets/unilist/demont.png";
 import i14 from "../../assets/images/lyt-logo.jpg";
 import i15 from "../../assets/images/lyt-logo.jpg";
 import i16 from "../../assets/images/lyt-logo.jpg";
 // import i17 from '../../assets/Uni Logo update/17.png'
 import i18 from "../../assets/images/lyt-logo.jpg";
 import i19 from "../../assets/images/lyt-logo.jpg";
-import i20 from "../../assets/images/lyt-logo.jpg";
+import i20 from "../../assets/unilist/law.png";
 import i21 from "../../assets/images/lyt-logo.jpg";
 import i22 from "../../assets/images/lyt-logo.jpg";
 import i23 from "../../assets/images/lyt-logo.jpg";
@@ -55,7 +54,7 @@ import i49 from "../../assets/images/lyt-logo.jpg";
 import i50 from "../../assets/images/lyt-logo.jpg";
 // solent, cantebery, robert
 import i51 from "../../assets/images/lyt-logo.jpg";
-import i52 from "../../assets/images/lyt-logo.jpg";
+import i52 from "../../assets/unilist/cantebury.png";
 import i53 from "../../assets/images/lyt-logo.jpg";
 import i54 from "../../assets/images/lyt-logo.jpg";
 import i55 from "../../assets/images/lyt-logo.jpg";
@@ -106,11 +105,9 @@ import q4 from "../../assets/images/lyt-logo.jpg";
 import q5 from "../../assets/images/lyt-logo.jpg";
 import q6 from "../../assets/images/lyt-logo.jpg";
 import q7 from "../../assets/images/lyt-logo.jpg";
-
-//new
-
 import { Accordion, Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import "./Universities.css";
 
 const Universities = () => {
   useEffect(() => {
@@ -153,7 +150,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={u1} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         Bangor University is steeped in history and offers
                         excellent teaching. We are renowned for our
@@ -181,7 +178,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i1} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         We combine research with teaching, community with
                         industry and heritage with innovation. Spark change and
@@ -209,7 +206,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i2} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         Find out more about studying an undergraduate or
                         postgraduate degree course at ARU, in Chelmsford,
@@ -236,7 +233,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i4} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         Bath Spa University London is our new campus in Hackney
                         and is part of our higher education community. ·
@@ -264,7 +261,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i5} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         Welcome to the University of Bedfordshire. Find
                         information on all our courses including applying
@@ -292,7 +289,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i6} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         A world top 100 university and part of the prestigious
                         Russell Group, the University of Birmingham makes
@@ -319,7 +316,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i7} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         At Birmingham City University, we have invested £340
                         million transforming our campus and facilities and are
@@ -346,7 +343,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i8} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         Study a wide range of college, undergraduate and
                         postgraduate degree courses and higher level
@@ -373,7 +370,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i52} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         Find your perfect course at a supportive, friendly
                         university ranked 1se in the UK for graduates in
@@ -400,7 +397,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i9} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         We are a thriving multi-campus university in the south
                         of England, UK. Explore our subjects and search for
@@ -427,7 +424,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i10} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         Cardiff Metropolitan University, UK & Ireland University
                         of the Year 2021*. Times Higher Education Awards.
@@ -454,7 +451,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i11} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         Official Coventry University Details with information
                         about undergraduate degrees, postgraduate degrees,
@@ -481,7 +478,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i49} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         Join us at Coventry University London. Immerse yourself
                         in Coventry University Londons global community and
@@ -508,7 +505,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i54} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         Career-focused online college with hybrid & online
                         degree programs in Business, Tech & Health. 80+ college
@@ -535,7 +532,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i13} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         A UK University offering more than 300 courses at
                         Bachelors and Masters level. Find out more about life at
@@ -563,7 +560,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i14} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         Derby College is one of the University’s collaborative
                         partners based in the UK. Find your place with us
@@ -590,7 +587,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i15} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         Apply To The University Of Dundee, Your Best Choice For
                         Undergraduate Study. An Amazing Student Experience
@@ -617,7 +614,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i16} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         The University of East Anglia is a home for everyone, a
                         champion of interdisciplinarity that stands for equal
@@ -644,7 +641,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i18} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         Abertay University Dundee: Sunday Times University of
                         the Year for Teaching Quality 2021. Browse our diverse
@@ -671,7 +668,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i19} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         The University of Exeter in Exeter, Devon, and Falmouth,
                         Cornwall, UK, offers research and study in sciences,
@@ -698,7 +695,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i20} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         Our Dedicated Team Are Happy To Help With Any Queries
                         Regarding Your Application At GCU. Award-Winning Support
@@ -726,7 +723,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i21} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         Study at University of Gloucestershire. ... Discover our
                         courses. ... Our international offering is ranked in the
@@ -753,7 +750,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i22} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         The University of Hertfordshire offers a wide range of
                         Undergraduate, Postgraduate, Professional and Short
@@ -780,7 +777,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i23} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         University of Huddersfield - A university that is
                         inspiring global professionals. TEF Gold Award and Times
@@ -807,7 +804,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i55} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         At Jessup University we believe an exceptional education
                         should go hand-in-hand with your faith. We want you to
@@ -834,7 +831,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i24} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         Manchester Met offers dedicated support and work
                         placements on a range of courses. Be part of a proud
@@ -862,7 +859,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i25} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         USW is in an exceptional part of the UK, with city life,
                         mountains and coast. With campuses in Cardiff, Newport
@@ -889,7 +886,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i26} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         We are a world-className, Global Top 125 university
                         dedicated to excellence, creativity, and innovation
@@ -916,7 +913,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i50} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         Newcastle University Business School delivered a range
                         of programmes to a UK and international community of
@@ -943,7 +940,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i27} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         En Suite Rooms and Budget-Friendly Options. From £79.80
                         Per Week. Rent Includes All Bills. Starting Uni In 2023?
@@ -971,7 +968,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i28} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         The University of Nottingham is a pioneering
                         institution. We are a top 20 UK university and 8th in
@@ -998,7 +995,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i29} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         An incredible place to study. Student life. The best in
                         the UK - voted for by students (Whatuni 2022). Our
@@ -1025,7 +1022,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i30} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         A prestigious Russell Group UK university, Queens
                         University Belfast is ranked in the top 200 universities
@@ -1052,7 +1049,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i51} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         Aberdeens RGU is the Scottish University of the Year
                         2021. A top university in Scotland for graduate
@@ -1079,7 +1076,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i31} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         Discover the University of Reading, a global university
                         that enjoys a world-className reputation for teaching,
@@ -1106,7 +1103,7 @@ const Universities = () => {
                     <Accordion.Header>
                       <img className="w-50" src={i32} alt="" />
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body className="accordion-body-custom">
                       <p>
                         Browse by subject area · Accounting and Finance ·
                         Applied Science · Art and Design · Biological Sciences ·

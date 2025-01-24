@@ -8,9 +8,9 @@ import "./HeaderNav.css";
 
 function HeaderNav() {
   const navigate = useNavigate();
-  const handleRegistrationClick = () => {
-    window.location.href = "/registration";
-  };
+  // const handleRegistrationClick = () => {
+  //   window.location.href = "/registration";
+  // };
 
   return (
     <div className="">

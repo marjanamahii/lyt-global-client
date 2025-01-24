@@ -9,6 +9,7 @@ import Login from "../components/Login/Login";
 import Register from "../components/Register/Register";
 import Services from "../pages/Services/Services";
 import Events from "../pages/Events/Events";
+import SearchBar from "../components/SearchBar/SearchBar";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
       { path: "/about", element: <AboutUs></AboutUs> },
       { path: "/services", element: <Services></Services> },
       { path: "/events", element: <Events></Events> },
+      { path: "/searchbar", element: <SearchBar></SearchBar> },
       {
         path: "/register",
         element: <Register />,
