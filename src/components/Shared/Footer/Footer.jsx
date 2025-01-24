@@ -116,16 +116,21 @@ const Footer = () => {
         {/* Global Branches */}
         <Row className="text-center border-top border-gray-500 pt-3">
           <Col>
-            <p className="text-white">
+            <p className="text-white mb-2">
               Our Global Branches:
               <a
                 href="/global-offices/united-kingdom"
                 className="text-white mx-2"
+                style={{ textDecoration: "none" }}
               >
                 UK Head Office
               </a>{" "}
               |
-              <a href="/global-offices/bangladesh" className="text-white mx-2">
+              <a
+                href="/global-offices/bangladesh"
+                className="text-white mx-2"
+                style={{ textDecoration: "none" }}
+              >
                 Bangladesh
               </a>{" "}
               |{/* Add other branches as needed */}
