@@ -24,15 +24,6 @@ const SearchBar = () => {
           style={{ height: "40px" }}
           onClick={handleSearchClick}
         />
-        <FaSearch
-          className="search-icon position-absolute"
-          style={{
-            top: "50%",
-            left: "5px",
-            transform: "translateY(-50%)", // Centers the icon vertically
-          }}
-          onClick={handleSearchClick}
-        />
       </div>
 
       {/* Expanded Search Section */}
