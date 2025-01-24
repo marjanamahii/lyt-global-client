@@ -15,6 +15,9 @@
 
 .primaryBtn:hover {
   transform: translateY(-3px);
+  background-color: #29a469 !important; /* Override the hover background */
+  border-color: #29a469 !important; /* Override the hover border color */
+  color: white !important;
 }
 
 .main_heading {

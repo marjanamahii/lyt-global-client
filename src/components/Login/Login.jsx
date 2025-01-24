@@ -77,7 +77,7 @@ const Login = () => {
                 <Button
                   variant="primary"
                   type="submit"
-                  className="w-100"
+                  className="w-100 primaryBtn"
                   disabled={loginLoading}
                 >
                   {loginLoading ? "Logging in..." : "Login"}
@@ -85,7 +85,11 @@ const Login = () => {
               </Form>
               <p className="text-center mt-4">
                 Don’t have an account?{" "}
-                <Link to="/register" className="text-primary">
+                <Link
+                  to="/register"
+                  // className="text-primary"
+                  style={{ color: "#29a469" }}
+                >
                   Register here
                 </Link>
               </p>

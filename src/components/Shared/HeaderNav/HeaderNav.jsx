@@ -46,11 +46,11 @@ function HeaderNav() {
 
   const handleLogout = async () => {
     try {
-      await logoutUser().unwrap(); // Logs out from the server
-      dispatch(logout()); // Clears Redux state
-      navigate("/login"); // Redirects to the login page
+      await logoutUser().unwrap();
+      dispatch(logout());
+      navigate("/login");
     } catch (error) {
-      console.log("Failed to log out", error); // Handles errors gracefully
+      console.log("Failed to log out", error);
     }
   };
 
@@ -108,10 +108,6 @@ function HeaderNav() {
               <Link className="myNav" to="/events">
                 Events{" "}
               </Link>
-              {/* <Link className='myNav' to='/agents'>Agent </Link> */}
-
-              {/* <Link  className='myNav'  onClick={handleRegistrationClick}>Registration </Link> */}
-
               <Link className="myNav" to="/universities">
                 Universities
               </Link>
@@ -121,31 +117,7 @@ function HeaderNav() {
               <Link className="myNav" to="/register">
                 Register
               </Link>
-              {/* <Link className="myNav" to="/blogs">
-                Blog
-              </Link> */}
-              {/* <button
-                className="myNav navBtn"
-                onClick={handleRegistrationClick}
-              >
-                Registration
-              </button> */}
-              {/* <a
-                className="myNav"
-                target="_blank"
-                href="https://shabujglobal.uuacrm.com/"
-                rel="noreferrer"
-              >
-                Login
-              </a> */}
-              {/* <a
-                className="myNav"
-                target="_blank"
-                href="/login"
-                rel="noreferrer"
-              >
-                Login
-              </a> */}
+
               {user ? (
                 <>
                   <Image
@@ -155,10 +127,10 @@ function HeaderNav() {
                     className="cursor-pointer z-10"
                     roundedCircle
                     style={{
-                      width: "35px", // Adjust the size to match your design
+                      width: "35px",
                       height: "35px",
-                      objectFit: "cover", // Ensures the image fills the circle
-                      boxShadow: "0 2px 6px rgba(0, 0, 0, 0.2)", // Optional: Add a shadow for better appearance
+                      objectFit: "cover",
+                      boxShadow: "0 2px 6px rgba(0, 0, 0, 0.2)",
                     }}
                   />
 

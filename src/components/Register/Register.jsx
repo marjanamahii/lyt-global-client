@@ -82,7 +82,7 @@ const Register = () => {
                 <Button
                   variant="primary"
                   type="submit"
-                  className="w-100"
+                  className="w-100 primaryBtn"
                   disabled={isLoading}
                 >
                   {isLoading ? "Registering..." : "Register"}
@@ -90,7 +90,11 @@ const Register = () => {
               </Form>
               <p className="text-center mt-4">
                 Already have an account?{" "}
-                <Link to="/login" className="text-primary">
+                <Link
+                  to="/login"
+                  // className="text-primary"
+                  style={{ color: "#29a469" }}
+                >
                   Login here
                 </Link>
               </p>
