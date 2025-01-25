@@ -8,6 +8,7 @@ import { AiFillYoutube } from "react-icons/ai";
 // import { AiOutlineTwitter } from 'react-icons/ai';
 import { RiTwitterXLine } from "react-icons/ri";
 import { AiOutlineInstagram } from "react-icons/ai";
+import { Button } from "react-bootstrap";
 // import { Link, NavLink } from "react-router-dom";
 
 const VideoBanner = () => {
@@ -15,8 +16,7 @@ const VideoBanner = () => {
     <div>
       <section className="showcase">
         <video src={vidBg2} muted loop autoPlay />
-        <div className="overlay"></div>
-        <div className="text">
+        <div className="text m-20">
           <h1>Start Your </h1>
           <h3>Path to Global Education</h3>
           <p>
@@ -26,7 +26,7 @@ const VideoBanner = () => {
 
           {/* "ineed to add doamin here/register/"  */}
           <a href="/register" rel="noreferrer">
-            <button className="glow-on-hover vidHeaderBtn">Apply Now</button>
+            <Button className="btn-apply-now">Apply Now</Button>
           </a>
         </div>
         <ul className="social">

@@ -674,19 +674,12 @@ button:hover {
   opacity: 0.8;
 }
 
-.overlay,
 .showcase video {
   height: 100%;
   left: 0;
   position: absolute;
   top: 0;
   width: 100%;
-}
-
-.overlay {
-  background: #03a9f4;
-  margin-top: 19px;
-  mix-blend-mode: overlay;
 }
 
 .text {
@@ -717,23 +710,6 @@ button:hover {
   font-weight: 400;
   margin: 20px 0;
   max-width: 700px;
-}
-
-.text a {
-  color: #fff;
-  display: inline-block;
-  font-size: 1em;
-  font-weight: 500;
-  letter-spacing: 2px;
-  margin-top: 10px;
-  padding: 10px 30px;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: 0.2s;
-}
-
-.text a:hover {
-  letter-spacing: 6px;
 }
 
 .social {
@@ -777,33 +753,6 @@ button:hover {
   .text h3 {
     font-size: 2em;
   }
-}
-
-.vidHeaderBtn {
-  border: none;
-  border-radius: 10px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 24px;
-  font-weight: 700;
-  height: 51px;
-  outline: none;
-  position: relative;
-  width: 154px;
-  z-index: 0;
-}
-
-.newVidBtn {
-  color: #440d0d;
-  display: inline-block;
-  font-size: 1em;
-  font-weight: 500;
-  letter-spacing: 2px;
-  margin-top: 10px;
-  padding: 10px 30px;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: 0.2s;
 }
 
 .modalTitle {
@@ -6300,7 +6249,6 @@ fieldset:disabled .btn {
   --bs-card-height: ;
   --bs-card-color: ;
   --bs-card-bg: #fff;
-  --bs-card-img-overlay-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
   word-wrap: break-word;
   background-clip: initial;
