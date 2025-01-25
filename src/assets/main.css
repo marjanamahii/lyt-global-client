@@ -952,16 +952,6 @@ button:hover {
   }
 }
 
-.eventRegBtn {
-  background-color: #1e50a0;
-}
-
-.eventRegBtn,
-.eventRegBtn:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
 .carousel .control-arrow,
 .carousel.carousel-slider .control-arrow {
   background: none;

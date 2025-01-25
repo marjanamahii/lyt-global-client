@@ -1,6 +1,10 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import aboutUs from "../../assets/unilist/uni1.png";
+import ourMission from "../../assets/images/ourMission.jpg";
+import ourStory from "../../assets/images/ourStory.jpg";
+import { FaLightbulb } from "react-icons/fa";
+import { SiTrustpilot } from "react-icons/si";
+import { PiMedalFill } from "react-icons/pi";
 
 const AboutUs = () => {
   return (
@@ -22,12 +26,12 @@ const AboutUs = () => {
       </div>
 
       {/* Mission Section */}
-      <section className="our-mission py-5">
+      <section className="our-mission py-5 text-black">
         <Container>
           <Row className="align-items-center">
             <Col md={6}>
-              <h2 className="mb-4">Our Mission</h2>
-              <p>
+              <h2 className="mb-4 text-uppercase font-bold">Our Mission</h2>
+              <p className="text-black">
                 At Lyt, we aim to empower individuals and organizations by
                 providing innovative solutions, trusted expertise, and
                 world-class support. Whether you're a student chasing dreams or
@@ -35,7 +39,7 @@ const AboutUs = () => {
               </p>
             </Col>
             <Col md={6}>
-              <Image src={aboutUs} alt="Mission Image" fluid />
+              <Image src={ourMission} alt="Mission Image" fluid />
             </Col>
           </Row>
         </Container>
@@ -46,11 +50,11 @@ const AboutUs = () => {
         <Container>
           <Row className="align-items-center">
             <Col md={6}>
-              <Image src={aboutUs} alt="Our Story Image" fluid />
+              <Image src={ourStory} alt="Our Story Image" fluid />
             </Col>
             <Col md={6}>
-              <h2 className="mb-4">Our Story</h2>
-              <p>
+              <h2 className="mb-4 text-uppercase font-bold">Our Story</h2>
+              <p className="text-black">
                 Lyt was born from a simple idea: to make a difference by guiding
                 people toward their goals with clarity and confidence. What
                 began as a small team with big dreams has grown into a global
@@ -64,40 +68,30 @@ const AboutUs = () => {
       {/* Core Values Section */}
       <section className="our-values py-5">
         <Container>
-          <h2 className="text-center mb-5">Our Core Values</h2>
+          <h2 className="text-center mb-5 text-uppercase font-bold">
+            Our Core Values
+          </h2>
           <Row>
             <Col md={4} className="text-center mb-4">
-              <Image
-                src="https://via.placeholder.com/100"
-                alt="Innovation Icon"
-                roundedCircle
-              />
-              <h4 className="mt-3">Innovation</h4>
-              <p>
+              <FaLightbulb />
+              <h4 className="mt-3 font-semibold">Innovation</h4>
+              <p className="text-black">
                 At Lyt, we stay ahead of the curve, constantly pushing
                 boundaries to create impactful solutions.
               </p>
             </Col>
             <Col md={4} className="text-center mb-4">
-              <Image
-                src="https://via.placeholder.com/100"
-                alt="Trust Icon"
-                roundedCircle
-              />
-              <h4 className="mt-3">Trust</h4>
-              <p>
+              <SiTrustpilot />
+              <h4 className="mt-3 font-semibold">Trust</h4>
+              <p className="text-black">
                 We are committed to building long-lasting relationships grounded
                 in reliability and integrity.
               </p>
             </Col>
             <Col md={4} className="text-center mb-4">
-              <Image
-                src="https://via.placeholder.com/100"
-                alt="Excellence Icon"
-                roundedCircle
-              />
-              <h4 className="mt-3">Excellence</h4>
-              <p>
+              <PiMedalFill />
+              <h4 className="mt-3 font-semibold">Excellence</h4>
+              <p className="text-black">
                 Delivering the highest quality service is not just a goal—it's
                 our standard.
               </p>

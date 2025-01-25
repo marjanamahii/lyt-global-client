@@ -100,7 +100,11 @@ const Events = () => {
                   {/* <p><b>⏰ Time: 10:00am - 02:00pm</b></p> */}
                   {/* <p>Entry- FREE ! (Registration Required)</p> */}
 
-                  <button class="glow-on-hover" type="button" disabled>
+                  <button
+                    class="eventRegBtn glow-on-hover"
+                    type="button"
+                    disabled
+                  >
                     <Link className="eventRegBtn" to="/register">
                       APPLY NOW
                     </Link>
