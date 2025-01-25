@@ -2,7 +2,8 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import avatarImg from "../../../assets/images/avatar.png";
-import logo1 from "../../../assets/images/lyt.png";
+// import logo1 from "../../../assets/images/lyt.png";
+import logo1 from "../../../assets/images/lytlogo.png";
 import { Link, useNavigate } from "react-router-dom";
 import "./HeaderNav.css";
 import { useDispatch, useSelector } from "react-redux";
@@ -69,7 +70,7 @@ function HeaderNav() {
               />
             </Link>
           </Navbar.Brand> */}
-          <Navbar.Brand
+          {/* <Navbar.Brand
             style={{ color: "black" }}
             className="d-flex justify-between align-items-center w-100 font-semibold"
           >
@@ -89,6 +90,15 @@ function HeaderNav() {
             >
               LYT Global
             </span>
+          </Navbar.Brand> */}
+          <Navbar.Brand href="#home" className="d-flex align-items-center">
+            <img
+              alt="LYT Global Logo"
+              src={logo1}
+              width="100"
+              height="80"
+              className="d-inline-block align-top"
+            />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse
