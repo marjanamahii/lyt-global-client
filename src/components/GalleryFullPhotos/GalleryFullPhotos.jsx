@@ -1051,8 +1051,6 @@ const GalleryFullPhotos = () => {
           </div>
         </div>
       </section>
-
-      <Footer></Footer>
     </div>
   );
 };

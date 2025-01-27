@@ -13,6 +13,7 @@ import SearchBar from "../components/SearchBar/SearchBar";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import UserProfile from "../pages/Dashboard/User/UserProfile";
 import PrivateRoutes from "./PrivateRoutes";
+import Career from "../pages/Career/Career";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
       { path: "/services", element: <Services></Services> },
       { path: "/events", element: <Events></Events> },
       { path: "/searchbar", element: <SearchBar></SearchBar> },
+      { path: "/career", element: <Career></Career> },
       {
         path: "/register",
         element: <Register />,

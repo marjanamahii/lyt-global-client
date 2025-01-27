@@ -26,7 +26,7 @@ const VideoBanner = () => {
 
           {/* "ineed to add doamin here/register/"  */}
           <a href="/register" rel="noreferrer">
-            <Button className="btn-apply-now">Apply Now</Button>
+            <Button className="btn-apply-now">Contact Now</Button>
           </a>
         </div>
         <ul className="social">

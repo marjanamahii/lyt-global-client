@@ -11,9 +11,7 @@ const Services = () => {
           style={{ backgroundColor: "#29a469" }}
         >
           <div className="col-md-12 px-0">
-            <h1 className="pt-5 display-4 font-italic text-center">
-              Contact <span className="text-success"></span> Us
-            </h1>
+            <h1 className="pt-5 display-4 font-italic text-center">Services</h1>
           </div>
         </div>
       </div>

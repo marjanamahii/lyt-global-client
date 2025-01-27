@@ -31,7 +31,7 @@ const Footer = () => {
             </Nav>
           </Col>
 
-          {/* About AHZ */}
+          {/* About LYT */}
           <Col xs={6} sm={4} md={3} className="mb-4">
             <Nav className="flex-column">
               <Nav.Link className="text-uppercase text-white">

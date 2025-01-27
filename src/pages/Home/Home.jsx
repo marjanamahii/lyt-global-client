@@ -4,9 +4,9 @@ import HeaderNav from "../../components/Shared/HeaderNav/HeaderNav";
 import VideoBanner from "../../components/VideoBanner/VideoBanner";
 import CounterSection from "../../components/CounterSection/CounterSection";
 import Gallery from "../../components/Gallery/Gallery";
-import Partners from "../../components/Partners/Parteners";
 import FAQS from "../../components/FAQS/FAQS";
 import SearchBar from "../../components/SearchBar/SearchBar";
+import Partners from "../../components/Partners/Partners";
 
 const Home = () => {
   useEffect(() => {
