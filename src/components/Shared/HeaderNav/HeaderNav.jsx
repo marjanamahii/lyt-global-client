@@ -3,7 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import avatarImg from "../../../assets/images/avatar.png";
 // import logo1 from "../../../assets/images/lyt.png";
-import logo1 from "../../../assets/images//lytnav.png";
+import logo1 from "../../../assets/images/lytnav.png";
 import { Link, useNavigate } from "react-router-dom";
 import "./HeaderNav.css";
 import { useDispatch, useSelector } from "react-redux";
@@ -59,12 +59,44 @@ function HeaderNav() {
     <div className="">
       <Navbar bg="light" expand="lg" fixed="top">
         <Container className="p-0">
+          {/* <Navbar.Brand>
+            <Link to="/">
+              <img
+                src={logo1}
+                width="100"
+                height="55"
+                className="d-inline-block align-top"
+                alt="LYT LOGO"
+              />
+            </Link>
+          </Navbar.Brand> */}
+          {/* <Navbar.Brand
+            style={{ color: "black" }}
+            className="d-flex justify-between align-items-center w-100 font-semibold"
+          >
+            <img
+              alt=""
+              src={logo1}
+              width="100"
+              height="55"
+              className="d-inline-block align-top"
+            />{" "}
+            <span
+              style={{
+                marginLeft: "3px",
+                fontSize: "1.5rem",
+                fontWeight: "bold",
+              }}
+            >
+              LYT Global
+            </span>
+          </Navbar.Brand> */}
           <Navbar.Brand href="#home" className="d-flex align-items-center">
             <img
               alt="LYT Global Logo"
               src={logo1}
-              width="309"
-              height="55"
+              width="308"
+              height="60"
               className="d-inline-block align-top"
             />
           </Navbar.Brand>
@@ -92,12 +124,12 @@ function HeaderNav() {
               <Link className="myNav" to="/contact">
                 Contact
               </Link>
-              {/* <Link className="myNav" to="/register">
-                Register
-              </Link> */}
               <Link className="myNav" to="/career">
                 Career
               </Link>
+              {/* <Link className="myNav" to="/register">
+                Register
+              </Link> */}
 
               {/* {user ? (
                 <>
