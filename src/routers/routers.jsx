@@ -14,6 +14,7 @@ import Dashboard from "../pages/Dashboard/Dashboard";
 import UserProfile from "../pages/Dashboard/User/UserProfile";
 import PrivateRoutes from "./PrivateRoutes";
 import Career from "../pages/Career/Career";
+import ApplicationForm from "../pages/Career/ApplicationForm/ApplicationForm";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,7 @@ const router = createBrowserRouter([
       { path: "/events", element: <Events></Events> },
       { path: "/searchbar", element: <SearchBar></SearchBar> },
       { path: "/career", element: <Career></Career> },
+      { path: "/career/apply", element: <ApplicationForm></ApplicationForm> },
       {
         path: "/register",
         element: <Register />,

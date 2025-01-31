@@ -4,7 +4,7 @@ import "./Services.css";
 
 const Services = () => {
   return (
-    <section className="services-section bg-white">
+    <div className="mt-2 bg-white">
       <div className="container-fluid mt-5 bg-light bg-gradient shadow">
         <div
           className="p-4 p-md-5 mb-4 text-white rounded featured"
@@ -158,7 +158,7 @@ const Services = () => {
           </Col>
         </Row>
       </Container>
-    </section>
+    </div>
   );
 };
 

@@ -91,11 +91,14 @@ function HeaderNav() {
               LYT Global
             </span>
           </Navbar.Brand> */}
-          <Navbar.Brand href="#home" className="d-flex align-items-center">
+          <Navbar.Brand
+            href="#home"
+            className="d-flex align-items-center ms-md-0 ms-2"
+          >
             <img
               alt="LYT Global Logo"
               src={logo1}
-              width="308"
+              width="250"
               height="60"
               className="d-inline-block align-top"
             />

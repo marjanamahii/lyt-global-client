@@ -25,7 +25,7 @@ const Footer = () => {
               <Nav.Link href="/scholarships" className="text-white">
                 Find a Scholarship
               </Nav.Link>
-              <Nav.Link href="/global-offices" className="text-white">
+              <Nav.Link href="/contact" className="text-white">
                 Contact Us
               </Nav.Link>
             </Nav>
@@ -37,16 +37,16 @@ const Footer = () => {
               <Nav.Link className="text-uppercase text-white">
                 All About LYT
               </Nav.Link>
-              <Nav.Link href="/about-us" className="text-white">
+              <Nav.Link href="/about" className="text-white">
                 About Us
               </Nav.Link>
-              <Nav.Link href="/about-ahz" className="text-white">
+              <Nav.Link href="/about-lyt" className="text-white">
                 About LYT
               </Nav.Link>
               <Nav.Link href="/what-we-do" className="text-white">
                 What We Do
               </Nav.Link>
-              <Nav.Link href="/why-choose-ahz" className="text-white">
+              <Nav.Link href="/why-choose-lyt" className="text-white">
                 Why Choose LYT
               </Nav.Link>
               <Nav.Link href="/success-stories" className="text-white">

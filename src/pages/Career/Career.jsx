@@ -1,8 +1,93 @@
-import React from "react";
+import React, { useState } from "react";
+import {
+  Container,
+  Row,
+  Col,
+  Card,
+  Button,
+  Form,
+  InputGroup,
+  Modal,
+} from "react-bootstrap";
+import { FaBriefcase, FaMapMarkerAlt, FaClock } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
-const Career = () => {
+function Career() {
+  const jobListings = [
+    {
+      title: "Frontend Developer",
+      location: "London, UK",
+      type: "Full-Time",
+      description:
+        "We're looking for a skilled React developer to join our growing team. You'll be responsible for developing dynamic web applications, collaborating with the backend team, and improving UI/UX.",
+      requirements: [
+        "Proficient in React.js, JavaScript, and TypeScript.",
+        "Experience with RESTful APIs and state management (Redux).",
+        "Strong knowledge of responsive design.",
+      ],
+    },
+    {
+      title: "Backend Developer",
+      location: "Remote",
+      type: "Part-Time",
+      description:
+        "Join us to build robust backend systems using Node.js and Express. Work with databases and cloud deployment to deliver high-performance APIs.",
+      requirements: [
+        "Proficiency in Node.js and Express.",
+        "Experience with MongoDB or PostgreSQL.",
+        "Knowledge of microservices architecture.",
+      ],
+    },
+    {
+      title: "UI/UX Designer",
+      location: "New York, USA",
+      type: "Contract",
+      description:
+        "Help us design engaging and intuitive user interfaces for our applications. Collaborate with developers and stakeholders to deliver user-centered designs.",
+      requirements: [
+        "Expertise in design tools like Figma or Adobe XD.",
+        "Strong understanding of user experience principles.",
+        "Experience conducting user research and usability testing.",
+      ],
+    },
+  ];
+
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filteredJobs, setFilteredJobs] = useState(jobListings);
+  const [showModal, setShowModal] = useState(false);
+  const [selectedJob, setSelectedJob] = useState(null);
+
+  const handleSearchChange = (e) => {
+    const value = e.target.value.toLowerCase();
+    setSearchTerm(value);
+    const filtered = jobListings.filter(
+      (job) =>
+        job.title.toLowerCase().includes(value) ||
+        job.location.toLowerCase().includes(value) ||
+        job.type.toLowerCase().includes(value)
+    );
+    setFilteredJobs(filtered);
+  };
+
+  const handleShowDetails = (job) => {
+    setSelectedJob(job);
+    setShowModal(true);
+  };
+
+  // const handleApplyNow = () => {
+  //   alert(
+  //     "Application form will open (connect it to your backend or redirect to an application form)."
+  //   );
+  // };
+
+  const navigate = useNavigate();
+
+  const handleApplyNow = () => {
+    navigate("/career/apply");
+  };
+
   return (
-    <section className="services-section bg-white">
+    <div className="mt-2">
       <div className="container-fluid mt-5 bg-light bg-gradient shadow">
         <div
           className="p-4 p-md-5 mb-4 text-white rounded featured"
@@ -13,46 +98,97 @@ const Career = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-screen-2xl container mx-auto xl:px-24 px-4 md:py-20 py-14">
-        <h1 className="text-5xl text-success font-bold text-primary mb-3">
-          Find a better job for you
+      <Container className="">
+        <h1 className="text-center mb-4 text-uppercase font-bold">
+          Join Our Team
         </h1>
-        <p className="text-lg text-black/70 mb-8">
-          Doloremque debitis assumenda porro! Repudiandae voluptas possimus
-          quisquam
+        <p className="text-center text-muted mb-5">
+          We are looking for talented individuals who are passionate about
+          innovation and creativity. Find your next career opportunity below.
         </p>
-        <form>
-          <div className="flex justify-start md:flex-row flex-col md:gap-0 gap-4">
-            <div className="flex md:rounded-s-md rounded shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset md:w-1/3 w-full">
-              <input
-                type="text"
-                name="title"
-                placeholder="What position are you looking for?"
-                id="title"
-                className="block flex-1 border-0 bg-transparent py-1.5 pl-8 text-grey-900 placeholder:text-gray-400 focus:right-0 sm:text-sm sm:leading-6"
-              />
-            </div>
-            <div className="flex md:rounded-s-none rounded shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset md:w-1/2 w-full">
-              <input
-                type="text"
-                name="title"
-                placeholder="Location"
-                id="title"
-                className="block flex-1 border-0 bg-transparent py-1.5 pl-8 text-grey-900 placeholder:text-gray-400 focus:right-0 sm:text-sm sm:leading-6"
-              />
-            </div>
 
-            <button
-              type="submit"
-              className="py-2 px-8 md:rounded-s-none rounded primaryBtn"
-            >
-              Search
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
+        {/* Search Bar */}
+        <InputGroup className="mb-4 w-50 mx-auto gap-2">
+          <Form.Control
+            type="text"
+            placeholder="Search by title, location, or job type"
+            value={searchTerm}
+            onChange={handleSearchChange}
+          />
+          <Button className="primaryBtn">Search</Button>
+        </InputGroup>
+
+        {/* Job Listings */}
+        <Row>
+          {filteredJobs.length > 0 ? (
+            filteredJobs.map((job, index) => (
+              <Col md={4} key={index} className="mb-4">
+                <Card className="shadow-sm border-0">
+                  <Card.Body>
+                    <Card.Title>
+                      <FaBriefcase className="me-2" />
+                      {job.title}
+                    </Card.Title>
+                    <Card.Subtitle className="text-muted mb-2">
+                      <FaMapMarkerAlt className="me-2" />
+                      {job.location} &nbsp;&nbsp;
+                      <FaClock className="me-2" />
+                      {job.type}
+                    </Card.Subtitle>
+                    <Card.Text>{job.description.substring(0, 80)}...</Card.Text>
+                    <Button
+                      variant="dark"
+                      className="me-2"
+                      onClick={() => handleShowDetails(job)}
+                    >
+                      Details
+                    </Button>
+                    <Button className="primaryBtn" onClick={handleApplyNow}>
+                      Apply Now
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))
+          ) : (
+            <Col>
+              <p className="text-center text-muted">
+                No jobs match your search criteria.
+              </p>
+            </Col>
+          )}
+        </Row>
+
+        {/* Job Details Modal */}
+        <Modal show={showModal} onHide={() => setShowModal(false)}>
+          <Modal.Header closeButton>
+            <Modal.Title>{selectedJob?.title}</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <h5>Location: {selectedJob?.location}</h5>
+            <p>
+              <strong>Type:</strong> {selectedJob?.type}
+            </p>
+            <p>{selectedJob?.description}</p>
+            <h6>Requirements:</h6>
+            <ul>
+              {selectedJob?.requirements.map((req, index) => (
+                <li key={index}>{req}</li>
+              ))}
+            </ul>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="dark" onClick={() => setShowModal(false)}>
+              Close
+            </Button>
+            <Button className="primaryBtn" onClick={handleApplyNow}>
+              Apply Now
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </Container>
+    </div>
   );
-};
+}
 
 export default Career;
