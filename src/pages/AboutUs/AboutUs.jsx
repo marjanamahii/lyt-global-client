@@ -5,6 +5,7 @@ import ourStory from "../../assets/images/ourStory.jpg";
 import { FaLightbulb } from "react-icons/fa";
 import { SiTrustpilot } from "react-icons/si";
 import { PiMedalFill } from "react-icons/pi";
+import Achievements from "./Achievements";
 
 const AboutUs = () => {
   return (
@@ -137,6 +138,9 @@ const AboutUs = () => {
             </Col>
           </Row>
         </Container>
+      </section>
+      <section>
+        <Achievements></Achievements>
       </section>
 
       {/* Call-to-Action Section */}
