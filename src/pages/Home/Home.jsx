@@ -19,7 +19,7 @@ const Home = () => {
       <SearchBar></SearchBar>
       <Partners></Partners>
       <CounterSection></CounterSection>
-      <Gallery></Gallery>
+      {/* <Gallery></Gallery> */}
       <FAQS></FAQS>
 
       {/* <UniLogoSlider></UniLogoSlider> */}
