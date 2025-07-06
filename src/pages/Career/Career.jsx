@@ -244,10 +244,10 @@ function Career() {
             {/* <Button className="primaryBtn" onClick={handleApplyNow}>
               Apply Now
             </Button> */}
-            <span className="text-muted fst-italic">
+            {/* <span className="text-muted fst-italic">
               Send your CV to:{" "}
               <a href="mailto:info@lyt-global.com">info@lyt-global.com</a>
-            </span>
+            </span> */}
           </Modal.Footer>
         </Modal>
       </Container>
