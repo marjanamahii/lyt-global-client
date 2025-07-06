@@ -94,7 +94,7 @@ const Events = () => {
                   </p>
                   <p>
                     <b>
-                      Date: <span className="newsWeight">20th March</span>, 2025
+                      Date: <span className="newsWeight">20th July</span>, 2025
                     </b>
                   </p>
                   {/* <p><b>⏰ Time: 10:00am - 02:00pm</b></p> */}
