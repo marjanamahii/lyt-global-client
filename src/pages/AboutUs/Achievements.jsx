@@ -25,11 +25,6 @@ const achievements = [
     src: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
     alt: "Sample PDF Achievement",
   },
-  {
-    type: "image",
-    src: "https://mie-global-te43fd.s3.amazonaws.com/static/images/achievements-01.original.webp",
-    alt: "Achievement Image 3",
-  },
 ];
 
 const Achievements = () => {

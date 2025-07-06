@@ -9,15 +9,33 @@ import {
   InputGroup,
   Modal,
 } from "react-bootstrap";
-import { FaBriefcase, FaMapMarkerAlt, FaClock } from "react-icons/fa";
+import {
+  FaBriefcase,
+  FaMapMarkerAlt,
+  FaClock,
+  FaMoneyCheck,
+} from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 function Career() {
   const jobListings = [
+    // {
+    //   title: "Frontend Developer",
+    //   location: "London, UK",
+    //   type: "Full-Time",
+    //   description:
+    //     "We're looking for a skilled React developer to join our growing team. You'll be responsible for developing dynamic web applications, collaborating with the backend team, and improving UI/UX.",
+    //   requirements: [
+    //     "Proficient in React.js, JavaScript, and TypeScript.",
+    //     "Experience with RESTful APIs and state management (Redux).",
+    //     "Strong knowledge of responsive design.",
+    //   ],
+    // },
     {
-      title: "Frontend Developer",
+      title: "Business Development Executive",
       location: "London, UK",
       type: "Full-Time",
+      salary: "Competitive",
       description:
         "We're looking for a skilled React developer to join our growing team. You'll be responsible for developing dynamic web applications, collaborating with the backend team, and improving UI/UX.",
       requirements: [
@@ -27,9 +45,23 @@ function Career() {
       ],
     },
     {
-      title: "Backend Developer",
-      location: "Remote",
-      type: "Part-Time",
+      title: "Office Assistant",
+      location: "Hyderabad,India",
+      type: "Full-Time",
+      salary: "Competitive",
+      description:
+        "We're looking for a skilled React developer to join our growing team. You'll be responsible for developing dynamic web applications, collaborating with the backend team, and improving UI/UX.",
+      requirements: [
+        "Proficient in React.js, JavaScript, and TypeScript.",
+        "Experience with RESTful APIs and state management (Redux).",
+        "Strong knowledge of responsive design.",
+      ],
+    },
+    {
+      title: "Student Consultant",
+      location: "Sylhet, BD",
+      type: "Full-Time",
+      salary: "Competitive",
       description:
         "Join us to build robust backend systems using Node.js and Express. Work with databases and cloud deployment to deliver high-performance APIs.",
       requirements: [
@@ -38,18 +70,18 @@ function Career() {
         "Knowledge of microservices architecture.",
       ],
     },
-    {
-      title: "UI/UX Designer",
-      location: "New York, USA",
-      type: "Contract",
-      description:
-        "Help us design engaging and intuitive user interfaces for our applications. Collaborate with developers and stakeholders to deliver user-centered designs.",
-      requirements: [
-        "Expertise in design tools like Figma or Adobe XD.",
-        "Strong understanding of user experience principles.",
-        "Experience conducting user research and usability testing.",
-      ],
-    },
+    // {
+    //   title: "UI/UX Designer",
+    //   location: "New York, USA",
+    //   type: "Contract",
+    //   description:
+    //     "Help us design engaging and intuitive user interfaces for our applications. Collaborate with developers and stakeholders to deliver user-centered designs.",
+    //   requirements: [
+    //     "Expertise in design tools like Figma or Adobe XD.",
+    //     "Strong understanding of user experience principles.",
+    //     "Experience conducting user research and usability testing.",
+    //   ],
+    // },
   ];
 
   const [searchTerm, setSearchTerm] = useState("");
@@ -134,6 +166,8 @@ function Career() {
                       {job.location} &nbsp;&nbsp;
                       <FaClock className="me-2" />
                       {job.type}
+                      {/* <FaMoneyCheck className="me-2" />
+                      {job.salary} */}
                     </Card.Subtitle>
                     <Card.Text>{job.description.substring(0, 80)}...</Card.Text>
                     <Button
@@ -192,3 +226,68 @@ function Career() {
 }
 
 export default Career;
+// import React from "react";
+
+// function Career() {
+//   return (
+//     <div>
+//       <div className="container-fluid mt-5 bg-light bg-gradient shadow">
+//         <div
+//           className="p-4 p-md-5 mb-4 text-white rounded featured"
+//           style={{ backgroundColor: "#29a469" }}
+//         >
+//           <div className="col-md-12 px-0">
+//             <h1 className="pt-5 display-4 font-italic text-center">Careers</h1>
+//           </div>
+//         </div>
+//       </div>
+//       <section className="px-4 py-10 max-w-5xl mx-auto text-gray-800">
+//         <h2 className="text-3xl font-bold mb-6 text-center border-b pb-2">
+//           Career Opportunities
+//         </h2>
+
+//         <div className="mb-6">
+//           <h3 className="text-xl font-semibold mb-2">Vacant Positions</h3>
+//           <ul className="list-disc list-inside space-y-1">
+//             <li>
+//               Business Development Executive – <strong>London Office</strong>
+//             </li>
+//             <li>
+//               Student Consultant (2 Positions) – <strong>Sylhet Office</strong>
+//             </li>
+//             <li>
+//               Office Assistant (1 Position) – <strong>Hyderabad Office</strong>
+//             </li>
+//           </ul>
+//         </div>
+
+//         <div className="mb-6">
+//           <h3 className="text-xl font-semibold mb-2">Office Locations</h3>
+//           <p>
+//             <strong>Hyderabad Office:</strong> #3-10-5/2, Trimulgherry Cross
+//             Roads, Secunderabad, Telangana- 500 015
+//           </p>
+//           <p>
+//             <strong>Nepal Office:</strong> 3rd Floor, Opposite Hope Hospital
+//             Lane, Sinamangal Road, Kathmandu, Nepal 44600
+//           </p>
+//         </div>
+
+//         <p className="mb-2">
+//           Salary: <strong>Competitive</strong>
+//         </p>
+//         <p>
+//           To apply, send your CV to{" "}
+//           <a
+//             className="text-primary hover:underline"
+//             href="mailto:info@lyt-global.com"
+//           >
+//             info@lyt-global.com
+//           </a>
+//         </p>
+//       </section>
+//     </div>
+//   );
+// }
+
+// export default Career;
