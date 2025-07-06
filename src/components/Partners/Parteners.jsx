@@ -62,11 +62,31 @@ import { Link } from "react-router-dom";
 const Partners = () => {
   return (
     <Container fluid>
-      <Link to="/Universities" className="no-underline-link">
+      <Link to="https://skuniguide.com/" className="no-underline-link">
         <div className="">
           <h1 className="text-center pt-2 pb-2 uniHeading">Our Partners</h1>
-          <Marquee className="sliderNoScroll" pauseOnHover={true} speed={100}>
-            <div className="mx-1">
+          <div className="associate-partner-section text-center my-5">
+            {/* <h2 className="mb-3">Associate Partner</h2> */}
+            <p className="lead text-black">
+              We are proud to partner with <strong>SK Uni Guide</strong> for our
+              India and Nepal operations. SK Uni Guide is a trusted name in
+              educational consultancy, sharing our commitment to providing
+              students with the best guidance for their international study
+              aspirations.
+            </p>
+            <p className="text-black font-bold">
+              Visit SK Uni Guide here:{" "}
+              <a
+                href="https://skuniguide.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://skuniguide.com/
+              </a>
+            </p>
+          </div>
+          {/* <Marquee className="sliderNoScroll" pauseOnHover={true} speed={100}> */}
+          {/* <div className="mx-1">
               <img src={i1} alt="img" />
             </div>
             <div className="mx-1">
@@ -95,8 +115,8 @@ const Partners = () => {
             </div>
             <div className="mx-1">
               <img src={i10} alt="img" />
-            </div>
-            {/* <div className="mx-1">
+            </div> */}
+          {/* <div className="mx-1">
               <img src={i11} alt="img" />
             </div>
             <div className="mx-1">
@@ -216,7 +236,7 @@ const Partners = () => {
             <div className="mx-1">
               <img src={i48} alt="img" />
             </div> */}
-          </Marquee>
+          {/* </Marquee> */}
         </div>
       </Link>
     </Container>

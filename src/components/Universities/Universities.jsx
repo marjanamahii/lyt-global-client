@@ -142,7 +142,7 @@ const Universities = () => {
               </h4>
             </div>
           </div>
-          <div className="row">
+          <div className="row mb-1">
             <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
@@ -363,7 +363,7 @@ const Universities = () => {
               </div>
             </div>
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -388,9 +388,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -416,9 +416,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -444,9 +444,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -471,9 +471,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -498,9 +498,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -525,9 +525,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -552,9 +552,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -579,9 +579,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -606,9 +606,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -633,9 +633,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -660,9 +660,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -687,9 +687,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -714,9 +714,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -741,9 +741,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -768,9 +768,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -795,9 +795,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -822,9 +822,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -850,9 +850,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -877,9 +877,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -904,9 +904,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -931,9 +931,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -959,9 +959,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -986,9 +986,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -1013,9 +1013,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -1040,9 +1040,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -1067,9 +1067,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -1094,9 +1094,9 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-3 col-sm-6 col-12">
+            {/* <div className="col-xl-3 col-sm-6 col-12">
               <div className=" d-flex">
                 <Accordion alwaysOpen>
                   <Accordion.Item eventKey="0">
@@ -1122,7 +1122,7 @@ const Universities = () => {
                   </Accordion.Item>
                 </Accordion>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
       </div>

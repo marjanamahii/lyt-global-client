@@ -22,44 +22,55 @@ const Services = () => {
           Explore the variety of services we offer to enhance your learning
           experience.
         </p>
-        <Row className="g-4">
+        <Row className="g-4 d-flex align-items-stretch">
           {/* Service 1 */}
-          <Col md={4}>
-            <Card className="service-card">
-              <Card.Img
+          <Col md={4} className="d-flex">
+            <Card className="service-card h-100">
+              {/* <Card.Img
                 variant="top"
                 src="https://via.placeholder.com/350x219?text=Service+1"
-              />
-              <Card.Body>
-                <Card.Title>Online Learning</Card.Title>
-                <Card.Text>
-                  Our online learning platform offers a flexible and accessible
-                  way for students to engage with course materials and
-                  instructors, all from the comfort of their own home.
+              /> */}
+              <Card.Body className="d-flex flex-column">
+                <Card.Title className="mb-3 font-bold">
+                  HR Services for SMEs
+                </Card.Title>
+                <Card.Text className="flex-grow-1">
+                  Comprehensive Human Resources support tailored for Small and
+                  Medium-sized Enterprises in the UK, India, Nepal, and
+                  Bangladesh. We assist with recruitment, policy development,
+                  compliance, and talent management to optimize your workforce.
                 </Card.Text>
-                <a href="/service/online-learning" className="btn btn-success">
+                <a
+                  href="/service/business-modelling"
+                  className="btn btn-success mt-auto"
+                >
                   Learn More
                 </a>
               </Card.Body>
             </Card>
           </Col>
           {/* Service 2 */}
-          <Col md={4}>
-            <Card className="service-card">
-              <Card.Img
+          <Col md={4} className="d-flex">
+            <Card className="service-card h-100">
+              {/* <Card.Img
                 variant="top"
                 src="https://via.placeholder.com/350x219?text=Service+2"
-              />
-              <Card.Body>
-                <Card.Title>Career Counseling</Card.Title>
-                <Card.Text>
-                  Get expert advice from our career counselors to help you
-                  choose the right career path, prepare for interviews, and land
-                  your dream job.
+              /> */}
+              <Card.Body className="d-flex flex-column">
+                <Card.Title className="mb-3 font-bold">
+                  Business Modelling Service (Construction & Architecture
+                  Sector)
+                </Card.Title>
+                <Card.Text className="flex-grow-1">
+                  Facilitating robust connections and strategic partnerships
+                  between construction companies, architectural firms, and
+                  skilled labor providers. Our service aims to optimize project
+                  execution, resource allocation, and foster collaborative
+                  growth within the construction ecosystem.
                 </Card.Text>
                 <a
-                  href="/service/career-counseling"
-                  className="btn btn-success"
+                  href="/service/business-modelling"
+                  className="btn btn-success mt-auto"
                 >
                   Learn More
                 </a>
@@ -67,7 +78,7 @@ const Services = () => {
             </Card>
           </Col>
           {/* Service 3 */}
-          <Col md={4}>
+          {/* <Col md={4}>
             <Card className="service-card">
               <Card.Img
                 variant="top"
@@ -88,74 +99,7 @@ const Services = () => {
                 </a>
               </Card.Body>
             </Card>
-          </Col>
-          {/* Service 4 */}
-          <Col md={4}>
-            <Card className="service-card">
-              <Card.Img
-                variant="top"
-                src="https://via.placeholder.com/350x219?text=Service+4"
-              />
-              <Card.Body>
-                <Card.Title>Internship Opportunities</Card.Title>
-                <Card.Text>
-                  Get hands-on experience by joining our internship programs
-                  with leading companies in various industries.
-                </Card.Text>
-                <a
-                  href="/service/internship-opportunities"
-                  className="btn btn-success"
-                >
-                  Learn More
-                </a>
-              </Card.Body>
-            </Card>
-          </Col>
-          {/* Service 5 */}
-          <Col md={4}>
-            <Card className="service-card">
-              <Card.Img
-                variant="top"
-                src="https://via.placeholder.com/350x219?text=Service+5"
-              />
-              <Card.Body>
-                <Card.Title>Personalized Coaching</Card.Title>
-                <Card.Text>
-                  Receive one-on-one coaching sessions tailored to your personal
-                  goals, whether academic, professional, or personal
-                  development.
-                </Card.Text>
-                <a
-                  href="/service/personalized-coaching"
-                  className="btn btn-success"
-                >
-                  Learn More
-                </a>
-              </Card.Body>
-            </Card>
-          </Col>
-          {/* Service 6 */}
-          <Col md={4}>
-            <Card className="service-card">
-              <Card.Img
-                variant="top"
-                src="https://via.placeholder.com/350x219?text=Service+6"
-              />
-              <Card.Body>
-                <Card.Title>Study Abroad Guidance</Card.Title>
-                <Card.Text>
-                  Our expert consultants will help you plan and apply for study
-                  abroad programs in top institutions around the world.
-                </Card.Text>
-                <a
-                  href="/service/study-abroad-guidance"
-                  className="btn btn-success"
-                >
-                  Learn More
-                </a>
-              </Card.Body>
-            </Card>
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </div>

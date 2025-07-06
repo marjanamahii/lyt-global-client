@@ -37,11 +37,13 @@ function Career() {
       type: "Full-Time",
       salary: "Competitive",
       description:
-        "We're looking for a skilled React developer to join our growing team. You'll be responsible for developing dynamic web applications, collaborating with the backend team, and improving UI/UX.",
+        "We're seeking a highly motivated Business Development Executive to join our team in London. You'll be responsible for identifying new business opportunities, building strong client relationships, and driving revenue growth. This role requires a proactive approach to sales and a deep understanding of market dynamics.",
       requirements: [
-        "Proficient in React.js, JavaScript, and TypeScript.",
-        "Experience with RESTful APIs and state management (Redux).",
-        "Strong knowledge of responsive design.",
+        "Proven experience in business development, sales, or a related field.",
+        "Excellent communication, negotiation, and interpersonal skills.",
+        "Ability to identify and cultivate new leads and opportunities.",
+        "Strong understanding of sales principles and customer relationship management.",
+        "Self-motivated with a results-driven approach.",
       ],
     },
     {
@@ -50,11 +52,13 @@ function Career() {
       type: "Full-Time",
       salary: "Competitive",
       description:
-        "We're looking for a skilled React developer to join our growing team. You'll be responsible for developing dynamic web applications, collaborating with the backend team, and improving UI/UX.",
+        "We're looking for an organized and proactive Office Assistant to join our team in Hyderabad. You'll be the backbone of our daily operations, ensuring the office runs smoothly and efficiently. Your responsibilities will include managing administrative tasks, supporting various departments, and maintaining a positive work environment.",
       requirements: [
-        "Proficient in React.js, JavaScript, and TypeScript.",
-        "Experience with RESTful APIs and state management (Redux).",
-        "Strong knowledge of responsive design.",
+        "Proven experience in an administrative or office assistant role.",
+        "Excellent organizational and time management skills.",
+        "Proficient in Microsoft Office Suite (Word, Excel, Outlook).",
+        "Strong communication and interpersonal abilities.",
+        "Ability to multitask and prioritize tasks effectively.",
       ],
     },
     {
@@ -63,11 +67,13 @@ function Career() {
       type: "Full-Time",
       salary: "Competitive",
       description:
-        "Join us to build robust backend systems using Node.js and Express. Work with databases and cloud deployment to deliver high-performance APIs.",
+        "We're seeking an enthusiastic and knowledgeable Student Consultant to join our team in Sylhet. You'll be instrumental in guiding students through their academic journeys, providing expert advice on course selection, university applications, and career pathways. This role requires strong communication skills and a genuine passion for helping students achieve their educational goals.",
       requirements: [
-        "Proficiency in Node.js and Express.",
-        "Experience with MongoDB or PostgreSQL.",
-        "Knowledge of microservices architecture.",
+        "Experience in educational consulting, advising, or a related field.",
+        "Excellent interpersonal and active listening skills.",
+        "Strong understanding of various educational systems and admission processes.",
+        "Ability to empathize with students and provide personalized guidance.",
+        "Proficient in conducting research and presenting information clearly.",
       ],
     },
     // {
@@ -177,9 +183,9 @@ function Career() {
                     >
                       Details
                     </Button>
-                    <Button className="primaryBtn" onClick={handleApplyNow}>
+                    {/* <Button className="primaryBtn" onClick={handleApplyNow}>
                       Apply Now
-                    </Button>
+                    </Button> */}
                   </Card.Body>
                 </Card>
               </Col>
@@ -215,9 +221,13 @@ function Career() {
             <Button variant="dark" onClick={() => setShowModal(false)}>
               Close
             </Button>
-            <Button className="primaryBtn" onClick={handleApplyNow}>
+            {/* <Button className="primaryBtn" onClick={handleApplyNow}>
               Apply Now
-            </Button>
+            </Button> */}
+            <span className="text-muted fst-italic">
+              Send your CV to:{" "}
+              <a href="mailto:info@lyt-global.com">info@lyt-global.com</a>
+            </span>
           </Modal.Footer>
         </Modal>
       </Container>
