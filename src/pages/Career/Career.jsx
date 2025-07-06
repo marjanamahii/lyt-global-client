@@ -39,11 +39,11 @@ function Career() {
       description:
         "We're seeking a highly motivated Business Development Executive to join our team in London. You'll be responsible for identifying new business opportunities, building strong client relationships, and driving revenue growth. This role requires a proactive approach to sales and a deep understanding of market dynamics.",
       requirements: [
-        "Proven experience in business development, sales, or a related field.",
-        "Excellent communication, negotiation, and interpersonal skills.",
-        "Ability to identify and cultivate new leads and opportunities.",
-        "Strong understanding of sales principles and customer relationship management.",
-        "Self-motivated with a results-driven approach.",
+        " - Proven experience in business development, sales, or a related field.",
+        " - Excellent communication, negotiation, and interpersonal skills.",
+        " - Ability to identify and cultivate new leads and opportunities.",
+        " - Strong understanding of sales principles and customer relationship management.",
+        " - Self-motivated with a results-driven approach.",
       ],
       applyInstructions:
         "Please send your CV and a brief cover letter outlining your relevant experience and why you are interested in this role to:",
@@ -57,11 +57,11 @@ function Career() {
       description:
         "We're looking for an organized and proactive Office Assistant to join our team in Hyderabad. You'll be the backbone of our daily operations, ensuring the office runs smoothly and efficiently. Your responsibilities will include managing administrative tasks, supporting various departments, and maintaining a positive work environment.",
       requirements: [
-        "Proven experience in an administrative or office assistant role.",
-        "Excellent organizational and time management skills.",
-        "Proficient in Microsoft Office Suite (Word, Excel, Outlook).",
-        "Strong communication and interpersonal abilities.",
-        "Ability to multitask and prioritize tasks effectively.",
+        " - Proven experience in an administrative or office assistant role.",
+        " - Excellent organizational and time management skills.",
+        " - Proficient in Microsoft Office Suite (Word, Excel, Outlook).",
+        " - Strong communication and interpersonal abilities.",
+        " - Ability to multitask and prioritize tasks effectively.",
       ],
       applyInstructions:
         "Please send your CV and a brief cover letter outlining your relevant experience and why you are interested in this role to:",
@@ -75,11 +75,11 @@ function Career() {
       description:
         "We're seeking an enthusiastic and knowledgeable Student Consultant to join our team in Sylhet. You'll be instrumental in guiding students through their academic journeys, providing expert advice on course selection, university applications, and career pathways. This role requires strong communication skills and a genuine passion for helping students achieve their educational goals.",
       requirements: [
-        "Experience in educational consulting, advising, or a related field.",
-        "Excellent interpersonal and active listening skills.",
-        "Strong understanding of various educational systems and admission processes.",
-        "Ability to empathize with students and provide personalized guidance.",
-        "Proficient in conducting research and presenting information clearly.",
+        " - Experience in educational consulting, advising, or a related field.",
+        " - Excellent interpersonal and active listening skills.",
+        " - Strong understanding of various educational systems and admission processes.",
+        " - Ability to empathize with students and provide personalized guidance.",
+        " - Proficient in conducting research and presenting information clearly.",
       ],
       applyInstructions:
         "Please send your CV and a brief cover letter outlining your relevant experience and why you are interested in this role to:",
