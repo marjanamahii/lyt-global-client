@@ -45,6 +45,9 @@ function Career() {
         "Strong understanding of sales principles and customer relationship management.",
         "Self-motivated with a results-driven approach.",
       ],
+      applyInstructions:
+        "Please send your CV and a brief cover letter outlining your relevant experience and why you are interested in this role to:",
+      applyEmail: "info@lyt-global.com",
     },
     {
       title: "Office Assistant",
@@ -60,6 +63,9 @@ function Career() {
         "Strong communication and interpersonal abilities.",
         "Ability to multitask and prioritize tasks effectively.",
       ],
+      applyInstructions:
+        "Please send your CV and a brief cover letter outlining your relevant experience and why you are interested in this role to:",
+      applyEmail: "info@lyt-global.com",
     },
     {
       title: "Student Consultant",
@@ -75,6 +81,9 @@ function Career() {
         "Ability to empathize with students and provide personalized guidance.",
         "Proficient in conducting research and presenting information clearly.",
       ],
+      applyInstructions:
+        "Please send your CV and a brief cover letter outlining your relevant experience and why you are interested in this role to:",
+      applyEmail: "info@lyt-global.com",
     },
     // {
     //   title: "UI/UX Designer",
@@ -210,12 +219,23 @@ function Career() {
               <strong>Type:</strong> {selectedJob?.type}
             </p>
             <p>{selectedJob?.description}</p>
-            <h6>Requirements:</h6>
+            <h6 className="mt-2 font-bold">Requirements:</h6>
             <ul>
               {selectedJob?.requirements.map((req, index) => (
                 <li key={index}>{req}</li>
               ))}
             </ul>
+            <h6 className="mt-2 font-bold ">To Apply:</h6>
+            {selectedJob?.applyInstructions && selectedJob?.applyEmail && (
+              <div>
+                <p className="text-black">{selectedJob.applyInstructions}</p>
+                <p>
+                  <a href={`mailto:${selectedJob.applyEmail}`}>
+                    {selectedJob.applyEmail}
+                  </a>
+                </p>
+              </div>
+            )}
           </Modal.Body>
           <Modal.Footer>
             <Button variant="dark" onClick={() => setShowModal(false)}>
