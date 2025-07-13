@@ -29,7 +29,7 @@ import img24 from "../../assets/images/lyt-logo.jpg";
 import img25 from "../../assets/images/lyt-logo.jpg";
 import img26 from "../../assets/images/lyt-logo.jpg";
 import img28 from "../../assets/images/lyt-logo.jpg";
-import img29 from "../../assets/images/lyt-logo.jpg";
+import img29 from "../../assets/images/event.jpeg";
 import img30 from "../../assets/images/lyt-logo.jpg";
 import img31 from "../../assets/images/lyt-logo.jpg";
 
@@ -87,14 +87,15 @@ const Events = () => {
                   </p>
 
                   <p>
-                    <b>🗺️ Location:-</b> <b>Hotel Star Pecific</b>
+                    <b>🗺️ Location:-</b>{" "}
+                    <b>Ma Lucky Centre, Sylhet, Bangladesh</b>
                   </p>
                   <p>
-                    <b>📞 Contact- +0000000000000</b>
+                    <b>📞 Contact- +880 1918 388086</b>
                   </p>
                   <p>
                     <b>
-                      Date: <span className="newsWeight">20th July</span>, 2025
+                      Date: <span className="newsWeight">20th Aug</span>, 2025
                     </b>
                   </p>
                   {/* <p><b>⏰ Time: 10:00am - 02:00pm</b></p> */}

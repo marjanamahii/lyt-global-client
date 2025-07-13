@@ -63,7 +63,7 @@ const CounterSection = () => {
               <div className="service-title-one">
                 <font>
                   <font>
-                    <CountUp delay={3} end={100} />+
+                    <CountUp delay={3} end={10} />+
                   </font>
                 </font>
               </div>
@@ -80,7 +80,7 @@ const CounterSection = () => {
               <div className="service-title-one">
                 <font>
                   <font>
-                    <CountUp delay={3} end={100} />+
+                    <CountUp delay={3} end={10} />+
                   </font>
                 </font>
               </div>
