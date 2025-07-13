@@ -7,7 +7,6 @@ import ContactUs from "../pages/ContactUs/ContactUs";
 import AboutUs from "../pages/AboutUs/AboutUs";
 import Login from "../components/Login/Login";
 import Register from "../components/Register/Register";
-import Services from "../pages/Services/Services";
 import Events from "../pages/Events/Events";
 import SearchBar from "../components/SearchBar/SearchBar";
 import Dashboard from "../pages/Dashboard/Dashboard";
@@ -15,6 +14,7 @@ import UserProfile from "../pages/Dashboard/User/UserProfile";
 import PrivateRoutes from "./PrivateRoutes";
 import Career from "../pages/Career/Career";
 import ApplicationForm from "../pages/Career/ApplicationForm/ApplicationForm";
+import Services from "../pages/Services/Services";
 
 const router = createBrowserRouter([
   {
