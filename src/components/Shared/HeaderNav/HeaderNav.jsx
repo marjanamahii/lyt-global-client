@@ -116,7 +116,7 @@ function HeaderNav() {
                 About
               </Link>
               <Link className="myNav" to="/services">
-                Services
+                Business
               </Link>
               <Link className="myNav" to="/universities">
                 Universities
