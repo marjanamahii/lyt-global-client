@@ -1,9 +1,10 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import "./Partners.css";
-
+import logo from "../../assets/images/logo.png";
+import unilink from "../../assets/images/unilink.png";
 import i1 from "../../assets/unilist/uni1.png";
 import i2 from "../../assets/unilist/birmingham.png";
 import i3 from "../../assets/unilist/cantebury.png";
@@ -59,208 +60,79 @@ import i52 from "../../assets/unilist/uni1.png";
 import i53 from "../../assets/unilist/uni1.png";
 import { Link } from "react-router-dom";
 
+const mainPartners = [
+  {
+    image: logo,
+    name: "SK Uni Guide",
+    description: `We are proud to partner with SK Uni Guide for our India and Nepal operations. SK Uni Guide is a trusted name in educational consultancy, sharing our commitment to providing students with the best guidance for their international study aspirations.`,
+    link: "https://skuniguide.com/",
+  },
+  {
+    image: unilink,
+    name: "Unilink Global Solution",
+    description: `LYT Global is proud to collaborate with Unilink Global Solution, enhancing our reach and capabilities in providing comprehensive educational and business consultancy services worldwide. Unilink Global Solution shares our vision for connecting students with top educational opportunities and fostering international business growth.`,
+    link: "https://www.unilinkgs.com/",
+  },
+];
+
 const Partners = () => {
   return (
-    <Container fluid>
+    <Container fluid className="py-5 partner-section-bg">
       {/* <Link to="https://skuniguide.com/" className="no-underline-link"> */}
       <div className="">
         <h1 className="text-center pt-2 pb-2 uniHeading">Our Partners</h1>
-        <div className="associate-partner-section text-center my-5">
-          <h2 className="mb-3 text-black font-bold uniHeading">SK Uni Guide</h2>
-          <p className="lead text-black">
-            We are proud to partner with{" "}
-            <strong className="font-bold">SK Uni Guide</strong> for our India
-            and Nepal operations. SK Uni Guide is a trusted name in educational
-            consultancy, sharing our commitment to providing students with the
-            best guidance for their international study aspirations.
-          </p>
-          <p className="text-black font-bold">
-            Visit SK Uni Guide here:{" "}
-            <a
-              href="https://skuniguide.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              https://skuniguide.com/
-            </a>
-          </p>
-        </div>
-        <div className="associate-partner-section text-center my-5">
-          <h2 className="mb-3 text-black font-bold uniHeading">
-            Unilink Global Solution
-          </h2>
-          <p className="lead text-black">
-            LYT Global is proud to collaborate with{" "}
-            <strong className="font-bold">Unilink Global Solution</strong> ,
-            enhancing our reach and capabilities in providing comprehensive
-            educational and business consultancy services worldwide. Unilink
-            Global Solution shares our vision for connecting students with top
-            educational opportunities and fostering international business
-            growth.
-          </p>
-          <p className="text-black font-bold">
-            Learn more about Unilink Global Solution:{" "}
-            <a
-              href="https://www.unilinkgs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              https://www.unilinkgs.com/
-            </a>
-          </p>
-        </div>
-        {/* <Marquee className="sliderNoScroll" pauseOnHover={true} speed={100}> */}
-        {/* <div className="mx-1">
-              <img src={i1} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i2} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i3} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i4} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i5} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i6} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i7} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i8} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i9} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i10} alt="img" />
-            </div> */}
-        {/* <div className="mx-1">
-              <img src={i11} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i18} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i13} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i14} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i15} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i16} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i49} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i51} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i19} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i20} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i21} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i22} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i23} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i24} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i25} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i26} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i27} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i28} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i29} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i30} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i31} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i32} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i50} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i52} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i34} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i35} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i36} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i37} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i38} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i39} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i40} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i41} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i53} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i42} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i43} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i44} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i45} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i46} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i47} alt="img" />
-            </div>
-            <div className="mx-1">
-              <img src={i48} alt="img" />
-            </div> */}
-        {/* </Marquee> */}
+        <Container className="my-5">
+          {" "}
+          {/* Use a non-fluid container to center cards */}
+          <Row className="justify-content-center g-4">
+            {" "}
+            {/* g-4 for gutter spacing */}
+            {mainPartners.map((partner, index) => (
+              <Col key={index} md={6}>
+                {" "}
+                {/* Each card takes half width on medium screens and up */}
+                <div className="partner-card text-center h-100">
+                  {" "}
+                  {partner.image && (
+                    <img
+                      src={partner.image}
+                      alt={`${partner.name} Logo`}
+                      className="partner-logo-main mb-3"
+                    />
+                  )}
+                  <p className="lead text-black flex-grow-1">
+                    {" "}
+                    {/* flex-grow-1 allows description to take available space */}
+                    We are proud to partner with{" "}
+                    <strong className="font-bold">{partner.name}</strong>{" "}
+                    {partner.name === "SK Uni Guide"
+                      ? "for our India and Nepal operations. SK Uni Guide is a trusted name in educational consultancy, sharing our commitment to providing students with the best guidance for their international study aspirations."
+                      : "enhancing our reach and capabilities in providing comprehensive educational and business consultancy services worldwide. Unilink Global Solution shares our vision for connecting students with top educational opportunities and fostering international business growth."}
+                  </p>
+                  <p className="text-black font-bold mt-auto">
+                    {" "}
+                    {`Visit ${partner.name} here: `}
+                    <a
+                      href={partner.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {partner.link}
+                    </a>
+                  </p>
+                </div>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+        {/* <Marquee className="sliderNoScroll" pauseOnHover={true} speed={100}>
+          <div className="mx-1">
+            <img src={i1} alt="img" />
+          </div>
+          <div className="mx-1">
+            <img src={i48} alt="img" />
+          </div>
+        </Marquee> */}
       </div>
       {/* </Link> */}
     </Container>

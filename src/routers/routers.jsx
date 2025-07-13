@@ -15,6 +15,7 @@ import PrivateRoutes from "./PrivateRoutes";
 import Career from "../pages/Career/Career";
 import ApplicationForm from "../pages/Career/ApplicationForm/ApplicationForm";
 import Services from "../pages/Services/Services";
+import Business from "../pages/Business/Business";
 
 const router = createBrowserRouter([
   {
@@ -26,7 +27,8 @@ const router = createBrowserRouter([
       { path: "/universities", element: <Universities></Universities> },
       { path: "/contact", element: <ContactUs></ContactUs> },
       { path: "/about", element: <AboutUs></AboutUs> },
-      { path: "/services", element: <Services></Services> },
+      // { path: "/services", element: <Services></Services> },
+      { path: "/business", element: <Business></Business> },
       { path: "/events", element: <Events></Events> },
       { path: "/searchbar", element: <SearchBar></SearchBar> },
       { path: "/career", element: <Career></Career> },

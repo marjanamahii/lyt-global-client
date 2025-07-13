@@ -1,11 +1,71 @@
 .no-underline-link {
   text-decoration: none;
 }
+.partner-section-bg {
+  background-color: #e0f2f1; /* A light greenish background, adjust as needed */
+  /* If your screenshot's green is a full-width band, this applies */
+}
+
+/* Styles for the main partner cards */
+.partner-card {
+  background-color: #ffffff; /* White background */
+  border: 1px solid #dee2e6; /* Light border */
+  border-radius: 0.75rem; /* Rounded corners */
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08); /* Subtle shadow */
+  padding: 1.5rem; /* Adjusted padding for the new layout */
+  height: 100%;
+}
+
+/* Style for partner logos inside the main cards */
+.partner-logo-main {
+  width: 100px; /* Set a fixed width */
+  height: 100px; /* Set a fixed height - MAKE SURE THIS MATCHES WIDTH FOR SQUARE */
+  object-fit: contain; /* Ensures the whole image is visible within the fixed dimensions */
+  margin-right: 1rem; /* Space between the image and the text content */
+  margin-bottom: 0; /* No bottom margin here for horizontal alignment */
+  flex-shrink: 0;
+}
+.partner-text-content {
+  flex-grow: 1; /* CRITICAL: Allows this column to fill all available horizontal space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Ensures this text column also fills the height of the card */
+}
+
+.partner-card p.lead {
+  flex-grow: 1; /* Allows the description to take available vertical space */
+  margin-bottom: 1rem; /* Space before the link */
+  font-size: 1rem; /* Adjust font size */
+  line-height: 1.5;
+  text-align: left; /* Aligns text to the left within the card */
+}
+
+.partner-card p.text-black.font-bold {
+  text-align: left; /* Aligns link to the left within the card */
+  font-size: 0.9rem; /* Adjust link font size */
+  margin-bottom: 0;
+}
+.partner-card a {
+  color: #007bff; /* Bootstrap primary blue, adjust if needed */
+  text-decoration: none; /* Remove underline */
+  font-weight: 600;
+}
+
+.partner-card a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
 .uniHeading {
   color: #29a469;
   font-size: 32px;
   font-weight: 800;
   line-height: 60px;
+}
+
+.partner-card .uniHeading {
+  font-size: 1.4rem; /* Smaller heading for inside cards */
+  text-align: left; /* Aligns text to the left within the card */
+  margin-bottom: 0.5rem; /* Adjusted margin */
 }
 .swiper-button-next,
 .swiper-button-prev {
