@@ -1,0 +1,17 @@
+.team-name-display,
+.team-title-display {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+.team-member-box {
+  position: relative;
+}
+
+.custom-team-card {
+  background-color: #ffffff; /* Card background: Pure white for clean contrast */
+  border: 1px solid #4caf50; /* Card border: A pleasant green that complements your background */
+  border-radius: 0.25rem; /* Card border-radius: Matches Bootstrap's 'rounded' */
+  box-shadow: 0 0.25rem 0.75rem rgba(76, 175, 80, 0.2); /* Card shadow: A subtle green-tinted shadow */
+}

@@ -62,31 +62,55 @@ import { Link } from "react-router-dom";
 const Partners = () => {
   return (
     <Container fluid>
-      <Link to="https://skuniguide.com/" className="no-underline-link">
-        <div className="">
-          <h1 className="text-center pt-2 pb-2 uniHeading">Our Partners</h1>
-          <div className="associate-partner-section text-center my-5">
-            {/* <h2 className="mb-3">Associate Partner</h2> */}
-            <p className="lead text-black">
-              We are proud to partner with <strong>SK Uni Guide</strong> for our
-              India and Nepal operations. SK Uni Guide is a trusted name in
-              educational consultancy, sharing our commitment to providing
-              students with the best guidance for their international study
-              aspirations.
-            </p>
-            <p className="text-black font-bold">
-              Visit SK Uni Guide here:{" "}
-              <a
-                href="https://skuniguide.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                https://skuniguide.com/
-              </a>
-            </p>
-          </div>
-          {/* <Marquee className="sliderNoScroll" pauseOnHover={true} speed={100}> */}
-          {/* <div className="mx-1">
+      {/* <Link to="https://skuniguide.com/" className="no-underline-link"> */}
+      <div className="">
+        <h1 className="text-center pt-2 pb-2 uniHeading">Our Partners</h1>
+        <div className="associate-partner-section text-center my-5">
+          <h2 className="mb-3 text-black font-bold uniHeading">SK Uni Guide</h2>
+          <p className="lead text-black">
+            We are proud to partner with{" "}
+            <strong className="font-bold">SK Uni Guide</strong> for our India
+            and Nepal operations. SK Uni Guide is a trusted name in educational
+            consultancy, sharing our commitment to providing students with the
+            best guidance for their international study aspirations.
+          </p>
+          <p className="text-black font-bold">
+            Visit SK Uni Guide here:{" "}
+            <a
+              href="https://skuniguide.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://skuniguide.com/
+            </a>
+          </p>
+        </div>
+        <div className="associate-partner-section text-center my-5">
+          <h2 className="mb-3 text-black font-bold uniHeading">
+            Unilink Global Solution
+          </h2>
+          <p className="lead text-black">
+            LYT Global is proud to collaborate with{" "}
+            <strong className="font-bold">Unilink Global Solution</strong> ,
+            enhancing our reach and capabilities in providing comprehensive
+            educational and business consultancy services worldwide. Unilink
+            Global Solution shares our vision for connecting students with top
+            educational opportunities and fostering international business
+            growth.
+          </p>
+          <p className="text-black font-bold">
+            Learn more about Unilink Global Solution:{" "}
+            <a
+              href="https://www.unilinkgs.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://www.unilinkgs.com/
+            </a>
+          </p>
+        </div>
+        {/* <Marquee className="sliderNoScroll" pauseOnHover={true} speed={100}> */}
+        {/* <div className="mx-1">
               <img src={i1} alt="img" />
             </div>
             <div className="mx-1">
@@ -116,7 +140,7 @@ const Partners = () => {
             <div className="mx-1">
               <img src={i10} alt="img" />
             </div> */}
-          {/* <div className="mx-1">
+        {/* <div className="mx-1">
               <img src={i11} alt="img" />
             </div>
             <div className="mx-1">
@@ -236,9 +260,9 @@ const Partners = () => {
             <div className="mx-1">
               <img src={i48} alt="img" />
             </div> */}
-          {/* </Marquee> */}
-        </div>
-      </Link>
+        {/* </Marquee> */}
+      </div>
+      {/* </Link> */}
     </Container>
   );
 };

@@ -1,11 +1,43 @@
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Image,
+  OverlayTrigger,
+  Tooltip,
+} from "react-bootstrap";
 import ourMission from "../../assets/images/ourMission.jpg";
 import ourStory from "../../assets/images/ourStory.jpg";
-import { FaLightbulb } from "react-icons/fa";
+import { FaLightbulb, FaUsers } from "react-icons/fa";
 import { SiTrustpilot } from "react-icons/si";
 import { PiMedalFill } from "react-icons/pi";
+import { GiStrong } from "react-icons/gi";
 import Achievements from "./Achievements";
+import "./AboutUs.css";
+
+const teamMembers = [
+  { name: "Mst Sharmily Athia Shamme", title: "Director" },
+  { name: "Jabir Ahmed Khan", title: "General Manager" },
+  { name: "Mohammad Nahidur Rahman", title: "HR Officer" },
+  { name: "Sheikh Afif", title: "HR Officer" },
+  { name: "Md Aminul Islam", title: "Business Consultant" },
+  { name: "Deniel Santiago", title: "Business Consultant" },
+  { name: "Christina Argon", title: "Business Consultant" },
+  { name: "Saidur Rahman Khan", title: "Sales Executive" },
+  { name: "Hasnat Khan", title: "Sales Executive" },
+  { name: "Jannatul Reshma", title: "Legal Associate" },
+  { name: "Abdullah Sujon", title: "Legal Associate" },
+  { name: "Shahin Alom Sunny", title: "Student Consultant" },
+  { name: "Iftiker Ahmed Siddiqi", title: "Student Consultant" },
+  { name: "Khayrul Islam", title: "Student Consultant" },
+  { name: "Abdul Wadud", title: "Student Consultant" },
+  { name: "Dulal Ahmed", title: "Student Consultant" },
+  { name: "Farzana Islam", title: "Student Consultant" },
+  { name: "Momin Ahmed", title: "Sales Agent" },
+  { name: "Juwel Ahmed", title: "Sales Agent" },
+  { name: "Marjana Begum", title: "Business Development Executive" },
+];
 
 const AboutUs = () => {
   return (
@@ -33,10 +65,14 @@ const AboutUs = () => {
             <Col md={6}>
               <h2 className="mb-4 text-uppercase font-bold">Our Mission</h2>
               <p className="text-black">
-                At Lyt, we aim to empower individuals and organizations by
-                providing innovative solutions, trusted expertise, and
-                world-class support. Whether you're a student chasing dreams or
-                a Services striving for excellence, we help you shine brighter.
+                <strong className="font-bold">Mission:</strong> To empower
+                students, professionals, and organizations by delivering expert
+                consultancy, transformative training, and meaningful support
+                that lead to academic, career, and business success. <br />
+                <strong className="font-bold">Vision:</strong> To become the
+                most trusted global partner in education and innovation
+                consultancy by combining integrity, intelligence, and impact in
+                everything we do.
               </p>
             </Col>
             <Col md={6}>
@@ -56,10 +92,33 @@ const AboutUs = () => {
             <Col md={6}>
               <h2 className="mb-4 text-uppercase font-bold">Our Story</h2>
               <p className="text-black">
-                Lyt was born from a simple idea: to make a difference by guiding
-                people toward their goals with clarity and confidence. What
-                began as a small team with big dreams has grown into a global
-                company, trusted by thousands to illuminate the path to success.
+                <strong className="font-bold">Founded in 2024</strong>, LYT
+                GLOBAL began as a small initiative with an outsized vision: to
+                bridge personal ambition with global opportunity. Our founding
+                team recognised a consistent challenge across industries and
+                education sectors—people and organisations were navigating major
+                life and market decisions with inadequate support, outdated
+                advice, or impersonal service. In response, LYT GLOBAL was
+                created to fill that void with real expertise, real empathy, and
+                real-world impact. <br />
+                <br />
+                Our origin story is rooted in the concept of trust. The founders
+                chose the name “LYT”{" "}
+                <strong className="font-bold"> - Live Your Trust</strong> to
+                serve as a daily reminder of the values we commit to. It
+                signifies more than ethical behaviour; it demands
+                accountability, optimism, and results. From visa approvals to
+                course selections, from startup advice to AI training, LYT
+                GLOBAL brings a consistent value proposition: we are here to
+                guide, not just to inform; to build, not just to consult. <br />
+                <br />
+                Despite being a young company, we have already built an
+                international network of students, partners, professionals, and
+                institutions. This growth is not accidental; it’s the product of
+                client-first thinking, sustainable practice, and a commitment to
+                results. LYT GLOBAL is not just scaling, it’s evolving, with
+                purpose. company, trusted by thousands to illuminate the path to
+                success.
               </p>
             </Col>
           </Row>
@@ -74,27 +133,43 @@ const AboutUs = () => {
           </h2>
           <Row>
             <Col md={4} className="text-center mb-4">
-              <FaLightbulb />
-              <h4 className="mt-3 font-semibold">Innovation</h4>
+              <SiTrustpilot />
+              <h4 className="mt-3 font-bold">Integrity</h4>
               <p className="text-black">
-                At Lyt, we stay ahead of the curve, constantly pushing
-                boundaries to create impactful solutions.
+                We make promises carefully and keep them consistently. Every
+                engagement is marked by transparency and accountability.
               </p>
             </Col>
             <Col md={4} className="text-center mb-4">
-              <SiTrustpilot />
-              <h4 className="mt-3 font-semibold">Trust</h4>
+              <GiStrong />
+              <h4 className="mt-3 font-bold">Empowerment</h4>
               <p className="text-black">
-                We are committed to building long-lasting relationships grounded
-                in reliability and integrity.
+                Our goal is to make our clients self-reliant and confident, not
+                dependent. We enable smarter decisions.
+              </p>
+            </Col>
+            <Col md={4} className="text-center mb-4">
+              <FaLightbulb />
+              <h4 className="mt-3 font-bold">Innovation</h4>
+              <p className="text-black">
+                We adapt quickly to changing markets and needs, continuously
+                evolving our services to stay ahead of global trends.
+              </p>
+            </Col>
+            <Col md={4} className="text-center mb-4">
+              <FaUsers />
+              <h4 className="mt-3 font-bold">Client-Centricity</h4>
+              <p className="text-black">
+                Every solution is personalized. We reject one-size-fits-all
+                models and design experiences based on real needs.
               </p>
             </Col>
             <Col md={4} className="text-center mb-4">
               <PiMedalFill />
-              <h4 className="mt-3 font-semibold">Excellence</h4>
+              <h4 className="mt-3 font-bold">Excellence</h4>
               <p className="text-black">
-                Delivering the highest quality service is not just a goal—it's
-                our standard.
+                We demand quality in everything—from documentation and advisory
+                to training content and client communication.
               </p>
             </Col>
           </Row>
@@ -102,40 +177,47 @@ const AboutUs = () => {
       </section>
 
       {/* Team Section */}
-      <section
-        className="team text-white py-5"
-        style={{ background: "#29a469" }}
-      >
-        <Container>
-          <h2 className="text-center mb-5">Meet the Team</h2>
-          <Row>
-            <Col md={4} className="text-center mb-4">
-              <Image
-                src="https://via.placeholder.com/150"
-                alt="Team Member 1"
-                roundedCircle
-              />
-              <h5 className="mt-3">MD Aminul Islam</h5>
-              <p>Founder & CEO</p>
-            </Col>
-            <Col md={4} className="text-center mb-4">
-              <Image
-                src="https://via.placeholder.com/150"
-                alt="Team Member 2"
-                roundedCircle
-              />
-              <h5 className="mt-3">Sophia Lee</h5>
-              <p>Chief Innovation Officer</p>
-            </Col>
-            <Col md={4} className="text-center mb-4">
-              <Image
-                src="https://via.placeholder.com/150"
-                alt="Team Member 3"
-                roundedCircle
-              />
-              <h5 className="mt-3">Ryan Carter</h5>
-              <p>Head of Client Success</p>
-            </Col>
+      <section className="team py-5" style={{ background: "#29a469" }}>
+        <Container className="my-5">
+          <h2 className="text-center text-white  mb-5">Meet the Team</h2>
+          <Row className="justify-content-start">
+            {teamMembers.map((member, index) => (
+              <Col key={index} md={3} sm={6} className="mb-4">
+                <div className="custom-team-card team-member-box text-center p-3 h-100 d-flex flex-column justify-content-center">
+                  {/* OverlayTrigger for Name (shows full name on hover) */}
+                  <OverlayTrigger
+                    placement="top" // Position of the tooltip (top, bottom, left, right)
+                    delay={{ show: 250, hide: 400 }} // Delay in ms for showing/hiding tooltip
+                    overlay={
+                      <Tooltip id={`tooltip-name-${index}`}>
+                        {" "}
+                        {/* Unique ID is important */}
+                        {member.name}
+                      </Tooltip>
+                    }
+                  >
+                    <h5 className="mb-1 team-name-display">{member.name}</h5>
+                  </OverlayTrigger>
+
+                  {/* OverlayTrigger for Title (shows full title on hover) */}
+                  <OverlayTrigger
+                    placement="bottom" // Can place below for title
+                    delay={{ show: 250, hide: 400 }}
+                    overlay={
+                      <Tooltip id={`tooltip-title-${index}`}>
+                        {" "}
+                        {/* Unique ID is important */}
+                        {member.title}
+                      </Tooltip>
+                    }
+                  >
+                    <p className="text-muted mb-0 team-title-display">
+                      {member.title}
+                    </p>
+                  </OverlayTrigger>
+                </div>
+              </Col>
+            ))}
           </Row>
         </Container>
       </section>
