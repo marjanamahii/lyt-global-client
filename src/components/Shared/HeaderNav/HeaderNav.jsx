@@ -121,8 +121,11 @@ function HeaderNav() {
               <Link className="myNav" to="/business">
                 Business
               </Link>
-              <Link className="myNav" to="/universities">
+              {/* <Link className="myNav" to="/universities">
                 Universities
+              </Link> */}
+              <Link className="myNav" to="/students">
+                Students
               </Link>
               <Link className="myNav" to="/events">
                 Events{" "}

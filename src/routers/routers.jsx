@@ -16,6 +16,7 @@ import Career from "../pages/Career/Career";
 import ApplicationForm from "../pages/Career/ApplicationForm/ApplicationForm";
 import Services from "../pages/Services/Services";
 import Business from "../pages/Business/Business";
+import Students from "../pages/Students/Students";
 
 const router = createBrowserRouter([
   {
@@ -24,10 +25,11 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Home /> },
       { path: "/photos", element: <GalleryFullPhotos></GalleryFullPhotos> },
-      { path: "/universities", element: <Universities></Universities> },
+      // { path: "/universities", element: <Universities></Universities> },
+      { path: "/students", element: <Students></Students> },
       { path: "/contact", element: <ContactUs></ContactUs> },
       { path: "/about", element: <AboutUs></AboutUs> },
-      // { path: "/services", element: <Services></Services> },
+      { path: "/services", element: <Services></Services> },
       { path: "/business", element: <Business></Business> },
       { path: "/events", element: <Events></Events> },
       { path: "/searchbar", element: <SearchBar></SearchBar> },

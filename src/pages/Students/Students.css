@@ -1,0 +1,22 @@
+.accordion-body-custom {
+  padding: 16px;
+}
+
+.accordion-body-custom p {
+  margin: 0 0 16px;
+  line-height: 1.5;
+}
+
+.accordion-body-custom a {
+  display: inline-block;
+  margin-top: 16px;
+}
+@media (max-width: 768px) {
+  .accordion-body-custom {
+    padding: 12px;
+  }
+
+  .accordion-body-custom p {
+    margin: 0 0 12px;
+  }
+}
