@@ -67,7 +67,7 @@ const ContactUs = () => {
         <Container>
           <Row className="py-5 align-items-center">
             <Col xl="6" md="6" className="d-none d-md-block">
-              <iframe
+              {/* <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.907591932802!2d-0.06224322373088795!3d51.51491131015497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760332b316a367%3A0x7e78a35e9e8f9657!2s205%20Commercial%20Rd%2C%20London%20E1%202BT!5e0!3m2!1sen!2suk!4v1737243698874!5m2!1sen!2suk"
                 width="600"
                 height="450"
@@ -75,6 +75,15 @@ const ContactUs = () => {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
+              ></iframe> */}
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.042037442841!2d0.0379896!3d51.530788799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a7c8d52bc857%3A0xcc9a286b76d48673!2s2%2C%20569%20Green%20St%2C%20London%20E13%209BF!5e0!3m2!1sen!2suk!4v1752366804998!5m2!1sen!2suk"
+                width="600"
+                height="450"
+                style={{ border: 0 }}
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </Col>
             <Col xl="6" md="6">
