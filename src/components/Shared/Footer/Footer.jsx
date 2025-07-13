@@ -16,15 +16,15 @@ const Footer = () => {
               <Nav.Link href="/universities" className="text-white">
                 Find a University
               </Nav.Link>
-              <Nav.Link href="/compare-universities" className="text-white">
+              {/* <Nav.Link href="/compare-universities" className="text-white">
                 Compare Universities
-              </Nav.Link>
-              <Nav.Link href="/courses" className="text-white">
+              </Nav.Link> */}
+              {/* <Nav.Link href="/courses" className="text-white">
                 Find a Course
-              </Nav.Link>
-              <Nav.Link href="/scholarships" className="text-white">
+              </Nav.Link> */}
+              {/* <Nav.Link href="/scholarships" className="text-white">
                 Find a Scholarship
-              </Nav.Link>
+              </Nav.Link> */}
               <Nav.Link href="/contact" className="text-white">
                 Contact Us
               </Nav.Link>
@@ -40,18 +40,18 @@ const Footer = () => {
               <Nav.Link href="/about" className="text-white">
                 About Us
               </Nav.Link>
-              <Nav.Link href="/about-lyt" className="text-white">
+              {/* <Nav.Link href="/about-lyt" className="text-white">
                 About LYT
-              </Nav.Link>
-              <Nav.Link href="/what-we-do" className="text-white">
+              </Nav.Link> */}
+              {/* <Nav.Link href="/what-we-do" className="text-white">
                 What We Do
-              </Nav.Link>
-              <Nav.Link href="/why-choose-lyt" className="text-white">
+              </Nav.Link> */}
+              {/* <Nav.Link href="/why-choose-lyt" className="text-white">
                 Why Choose LYT
-              </Nav.Link>
-              <Nav.Link href="/success-stories" className="text-white">
+              </Nav.Link> */}
+              {/* <Nav.Link href="/success-stories" className="text-white">
                 Success Stories
-              </Nav.Link>
+              </Nav.Link> */}
             </Nav>
           </Col>
 
@@ -61,19 +61,19 @@ const Footer = () => {
               <Nav.Link className="text-uppercase text-white">
                 Community
               </Nav.Link>
-              <Nav.Link href="/news" className="text-white">
+              {/* <Nav.Link href="/news" className="text-white">
                 LYT News
-              </Nav.Link>
-              <Nav.Link href="/blogs" className="text-white">
+              </Nav.Link> */}
+              {/* <Nav.Link href="/blogs" className="text-white">
                 Latest Blogs
-              </Nav.Link>
+              </Nav.Link> */}
               <Nav.Link href="/events" className="text-white">
                 Upcoming Events
               </Nav.Link>
-              <Nav.Link href="/refer-a-friend" className="text-white">
+              {/* <Nav.Link href="/refer-a-friend" className="text-white">
                 Refer a Friend
-              </Nav.Link>
-              <Nav.Link href="/careers" className="text-white">
+              </Nav.Link> */}
+              <Nav.Link href="/career" className="text-white">
                 LYT Careers
               </Nav.Link>
             </Nav>
@@ -86,29 +86,31 @@ const Footer = () => {
                 Services
               </Nav.Link>
               <Nav.Link
-                href="/Services/uk-university-application"
+                // href="/Services/uk-university-application"
+                href="/contact"
                 className="text-white"
               >
                 Free Application Support
               </Nav.Link>
               <Nav.Link
-                href="/Services/student-visa-application-for-uk"
+                // href="/Services/student-visa-application-for-uk"
+                href="/contact"
                 className="text-white"
               >
                 Student Visa Applications
               </Nav.Link>
-              <Nav.Link href="/Services/financing-study" className="text-white">
+              {/* <Nav.Link href="/Services/financing-study" className="text-white">
                 Student Finance Advice
-              </Nav.Link>
-              <Nav.Link
+              </Nav.Link> */}
+              {/* <Nav.Link
                 href="/Services/advice-for-parents"
                 className="text-white"
               >
                 Advice for Parents
-              </Nav.Link>
-              <Nav.Link href="/Services/travel-support" className="text-white">
+              </Nav.Link> */}
+              {/* <Nav.Link href="/Services/travel-support" className="text-white">
                 Travel Support
-              </Nav.Link>
+              </Nav.Link> */}
             </Nav>
           </Col>
         </Row>
