@@ -79,34 +79,34 @@ const Footer = () => {
             </Nav>
           </Col>
 
-          {/* Services */}
+          {/* Business */}
           <Col xs={6} sm={4} md={3} className="mb-4">
             <Nav className="flex-column">
               <Nav.Link className="text-uppercase text-white">
-                Services
+                Business
               </Nav.Link>
               <Nav.Link
-                href="/services/uk-university-application"
+                href="/business/uk-university-application"
                 className="text-white"
               >
                 Free Application Support
               </Nav.Link>
               <Nav.Link
-                href="/services/student-visa-application-for-uk"
+                href="/business/student-visa-application-for-uk"
                 className="text-white"
               >
                 Student Visa Applications
               </Nav.Link>
-              <Nav.Link href="/services/financing-study" className="text-white">
+              <Nav.Link href="/business/financing-study" className="text-white">
                 Student Finance Advice
               </Nav.Link>
               <Nav.Link
-                href="/services/advice-for-parents"
+                href="/business/advice-for-parents"
                 className="text-white"
               >
                 Advice for Parents
               </Nav.Link>
-              <Nav.Link href="/services/travel-support" className="text-white">
+              <Nav.Link href="/business/travel-support" className="text-white">
                 Travel Support
               </Nav.Link>
             </Nav>

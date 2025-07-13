@@ -20,10 +20,10 @@ const FAQS = () => {
             <Accordion defaultActiveKey="0" className="faq-accordion">
               <Accordion.Item eventKey="0" className="faq-item">
                 <Accordion.Header className="faq-header">
-                  What services does Lyt Global provide?
+                  What Business does Lyt Global provide?
                 </Accordion.Header>
                 <Accordion.Body className="faq-body">
-                  Lyt Global offers a range of services, including:
+                  Lyt Global offers a range of Business, including:
                   <ul>
                     <li>University selection and application support</li>
                     <li>Visa application guidance</li>
@@ -49,11 +49,11 @@ const FAQS = () => {
               </Accordion.Item>
               <Accordion.Item eventKey="2" className="faq-item">
                 <Accordion.Header className="faq-header">
-                  Does Lyt Global charge for its consulting services?
+                  Does Lyt Global charge for its consulting Business?
                 </Accordion.Header>
                 <Accordion.Body className="faq-body">
-                  Many of our services, such as application and general
-                  consulting, are free of charge. Specialized services, like
+                  Many of our Business, such as application and general
+                  consulting, are free of charge. Specialized Business, like
                   visa application support, may involve a small fee. Contact us
                   to learn more about our pricing.
                 </Accordion.Body>

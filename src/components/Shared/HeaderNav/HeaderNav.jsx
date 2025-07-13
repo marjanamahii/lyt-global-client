@@ -115,14 +115,14 @@ function HeaderNav() {
               <Link className="myNav" to="/about">
                 About
               </Link>
-              <Link className="myNav" to="/services">
-                Services
-              </Link>
-              <Link className="myNav" to="/events">
-                Events{" "}
+              <Link className="myNav" to="/business">
+                Business
               </Link>
               <Link className="myNav" to="/universities">
                 Universities
+              </Link>
+              <Link className="myNav" to="/events">
+                Events{" "}
               </Link>
               <Link className="myNav" to="/contact">
                 Contact
