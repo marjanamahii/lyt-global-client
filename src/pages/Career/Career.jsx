@@ -32,14 +32,14 @@ function Career() {
     //   ],
     // },
     {
-      title: "Business Development Executive",
+      title: "Services Development Executive",
       location: "London, UK",
       type: "Full-Time",
       salary: "Competitive",
       description:
-        "We're seeking a highly motivated Business Development Executive to join our team in London. You'll be responsible for identifying new business opportunities, building strong client relationships, and driving revenue growth. This role requires a proactive approach to sales and a deep understanding of market dynamics.",
+        "We're seeking a highly motivated Services Development Executive to join our team in London. You'll be responsible for identifying new Services opportunities, building strong client relationships, and driving revenue growth. This role requires a proactive approach to sales and a deep understanding of market dynamics.",
       requirements: [
-        " - Proven experience in business development, sales, or a related field.",
+        " - Proven experience in Services development, sales, or a related field.",
         " - Excellent communication, negotiation, and interpersonal skills.",
         " - Ability to identify and cultivate new leads and opportunities.",
         " - Strong understanding of sales principles and customer relationship management.",
@@ -280,7 +280,7 @@ export default Career;
 //           <h3 className="text-xl font-semibold mb-2">Vacant Positions</h3>
 //           <ul className="list-disc list-inside space-y-1">
 //             <li>
-//               Business Development Executive – <strong>London Office</strong>
+//               Services Development Executive – <strong>London Office</strong>
 //             </li>
 //             <li>
 //               Student Consultant (2 Positions) – <strong>Sylhet Office</strong>

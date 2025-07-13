@@ -14,9 +14,9 @@ import { FaUserGraduate } from "react-icons/fa";
 const CounterSection = () => {
   return (
     <Container fluid>
-      <div className="Business-section">
+      <div className="Services-section">
         <div className="inner-width">
-          <div className="Business-container">
+          <div className="Services-container">
             <div className="service-box">
               <div className="service-icon">
                 <FaBuilding className="myServiceFont" />

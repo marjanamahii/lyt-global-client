@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import "./business.css";
+import "./services.css";
 
-const Business = () => {
+const Services = () => {
   return (
     <div className="mt-2 bg-white">
       <div className="container-fluid mt-5 bg-light bg-gradient shadow">
@@ -11,15 +11,15 @@ const Business = () => {
           style={{ backgroundColor: "#29a469" }}
         >
           <div className="col-md-12 px-0">
-            <h1 className="pt-5 display-4 font-italic text-center">Business</h1>
+            <h1 className="pt-5 display-4 font-italic text-center">Services</h1>
           </div>
         </div>
       </div>
 
       <Container>
-        <h2 className="section-title font-semibold">Our Business</h2>
+        <h2 className="section-title font-semibold">Our Services</h2>
         <p className="section-subtitle">
-          Explore the variety of Business we offer to enhance your learning
+          Explore the variety of Services we offer to enhance your learning
           experience.
         </p>
         <Row className="g-4 d-flex align-items-stretch">
@@ -32,7 +32,7 @@ const Business = () => {
               /> */}
               <Card.Body className="d-flex flex-column">
                 <Card.Title className="mb-3 font-bold">
-                  HR Business for SMEs
+                  HR Services for SMEs
                 </Card.Title>
                 <Card.Text className="flex-grow-1">
                   Comprehensive Human Resources support tailored for Small and
@@ -41,7 +41,7 @@ const Business = () => {
                   compliance, and talent management to optimize your workforce.
                 </Card.Text>
                 <a
-                  href="/service/business-modelling"
+                  href="/service/Services-modelling"
                   className="btn btn-success mt-auto"
                 >
                   Learn More
@@ -58,7 +58,7 @@ const Business = () => {
               /> */}
               <Card.Body className="d-flex flex-column">
                 <Card.Title className="mb-3 font-bold">
-                  Business Modelling Service (Construction & Architecture
+                  Services Modelling Service (Construction & Architecture
                   Sector)
                 </Card.Title>
                 <Card.Text className="flex-grow-1">
@@ -69,7 +69,7 @@ const Business = () => {
                   growth within the construction ecosystem.
                 </Card.Text>
                 <a
-                  href="/service/business-modelling"
+                  href="/service/Services-modelling"
                   className="btn btn-success mt-auto"
                 >
                   Learn More
@@ -106,4 +106,4 @@ const Business = () => {
   );
 };
 
-export default Business;
+export default Services;

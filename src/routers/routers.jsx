@@ -7,7 +7,7 @@ import ContactUs from "../pages/ContactUs/ContactUs";
 import AboutUs from "../pages/AboutUs/AboutUs";
 import Login from "../components/Login/Login";
 import Register from "../components/Register/Register";
-import Business from "../pages/business/business";
+import Services from "../pages/Services/Services";
 import Events from "../pages/Events/Events";
 import SearchBar from "../components/SearchBar/SearchBar";
 import Dashboard from "../pages/Dashboard/Dashboard";
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
       { path: "/universities", element: <Universities></Universities> },
       { path: "/contact", element: <ContactUs></ContactUs> },
       { path: "/about", element: <AboutUs></AboutUs> },
-      { path: "/business", element: <Business></Business> },
+      { path: "/services", element: <Services></Services> },
       { path: "/events", element: <Events></Events> },
       { path: "/searchbar", element: <SearchBar></SearchBar> },
       { path: "/career", element: <Career></Career> },

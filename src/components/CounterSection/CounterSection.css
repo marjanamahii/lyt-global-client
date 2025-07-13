@@ -19,14 +19,14 @@
   background: #82ccdd;
   margin: 40px auto;
 }
-.Business-section {
+.Services-section {
   background-color: #29a469;
   margin: 5px;
 }
 .myServiceFont {
   font-size: 65px;
 }
-.Business-container {
+.Services-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

@@ -564,7 +564,7 @@ const Universities = () => {
                     <Accordion.Body className="accordion-body-custom">
                       <p>
                         Career-focused online college with hybrid & online
-                        degree programs in Business, Tech & Health. 80+ college
+                        degree programs in Services, Tech & Health. 80+ college
                         classNamees at DeVry University & Keller.
                       </p>
                       <a
@@ -700,7 +700,7 @@ const Universities = () => {
                       <p>
                         The University of Exeter in Exeter, Devon, and Falmouth,
                         Cornwall, UK, offers research and study in sciences,
-                        social sciences, business, humanities and ...
+                        social sciences, Services, humanities and ...
                       </p>
                       <a
                         href="https://www.exeter.ac.uk/"
@@ -915,7 +915,7 @@ const Universities = () => {
                     </Accordion.Header>
                     <Accordion.Body className="accordion-body-custom">
                       <p>
-                        Newcastle University Business School delivered a range
+                        Newcastle University Services School delivered a range
                         of programmes to a UK and international community of
                         talented postgraduate, undergraduate and pre-degree ...
                       </p>
@@ -1107,7 +1107,7 @@ const Universities = () => {
                       <p>
                         Browse by subject area · Accounting and Finance ·
                         Applied Science · Art and Design · Biological Sciences ·
-                        Business and Management · Chemistry · Computer Science
+                        Services and Management · Chemistry · Computer Science
                         ...
                       </p>
                       <a

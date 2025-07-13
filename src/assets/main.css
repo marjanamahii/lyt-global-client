@@ -74,7 +74,7 @@ code {
   background-color: aqua;
 }
 
-.Business-section {
+.Services-section {
   background: url(/static/media/counterSecBg.0d0642388b8d157dc8c3.png);
   background-size: cover;
   padding: 76px 0;
@@ -416,7 +416,7 @@ button:hover {
   width: 160px;
 }
 
-.Business-container {
+.Services-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

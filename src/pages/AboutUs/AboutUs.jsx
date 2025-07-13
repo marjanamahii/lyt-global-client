@@ -36,7 +36,7 @@ const AboutUs = () => {
                 At Lyt, we aim to empower individuals and organizations by
                 providing innovative solutions, trusted expertise, and
                 world-class support. Whether you're a student chasing dreams or
-                a business striving for excellence, we help you shine brighter.
+                a Services striving for excellence, we help you shine brighter.
               </p>
             </Col>
             <Col md={6}>
@@ -148,7 +148,7 @@ const AboutUs = () => {
         <Container className="text-center">
           <h2 className="mb-4">Let’s Shine Together</h2>
           <p>
-            Whether you're a student, a professional, or a business, Lyt is here
+            Whether you're a student, a professional, or a Services, Lyt is here
             to help you succeed. Reach out today and discover how we can light
             your way.
           </p>
