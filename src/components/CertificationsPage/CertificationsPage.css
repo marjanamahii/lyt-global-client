@@ -1,0 +1,124 @@
+/* src/pages/CertificationsPage.css */
+
+.certifications-page-wrapper {
+  background-color: #f0f2f5; /* Light grey background for the page body */
+  min-height: 85vh;
+  padding-bottom: 4rem; /* Spacing at the bottom */
+}
+
+/* Header Section */
+.cert-header-section {
+  background-color: #29a469 !important; /* Your brand green */
+  color: #ffffff;
+  padding: 3rem 1rem !important; /* Generous padding */
+  margin-top: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cert-page-title {
+  font-size: 3.5rem; /* Larger title for impact */
+  font-weight: bold;
+  color: #ffffff !important;
+  margin-bottom: 0;
+}
+
+/* Certification Cards */
+.certification-card {
+  border: none; /* Remove default card border */
+  border-radius: 0.75rem; /* Rounded corners */
+  overflow: hidden; /* Ensures content respects border-radius */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  background-color: #ffffff; /* White background for cards */
+}
+
+.certification-card:hover {
+  transform: translateY(-5px); /* Lift card slightly on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.card-certification-img {
+  max-height: 200px; /* Control image height */
+  width: 100%;
+  object-fit: contain; /* Scale image to fit within bounds while maintaining aspect ratio */
+  padding: 1.5rem; /* Padding around the image inside the card */
+  background-color: #fcfcfc; /* Slightly off-white background for the image area */
+  border-bottom: 1px solid #eee; /* Subtle separator below image */
+}
+
+.cert-card-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #343a40; /* Dark text for titles */
+  margin-bottom: 1rem;
+  text-align: center; /* Center the title */
+}
+
+.cert-card-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555; /* Slightly lighter text for description */
+  margin-bottom: 1.5rem;
+  text-align: justify; /* Justify text for a clean block */
+}
+
+.cert-card-button {
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-width: 2px; /* Thicker border for outline button */
+  border-radius: 0.5rem; /* Match card radius */
+  width: 100%; /* Make button full width of card body */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  /* Medium devices (tablets) */
+  .cert-page-title {
+    font-size: 3rem;
+  }
+  .card-certification-img {
+    max-height: 180px;
+  }
+  .cert-card-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* Small devices (large phones, small tablets) */
+  .cert-page-title {
+    font-size: 2.5rem;
+    padding: 2rem 1rem !important;
+  }
+  .card-certification-img {
+    max-height: 160px;
+    padding: 1rem;
+  }
+  .cert-card-title {
+    font-size: 1.35rem;
+  }
+  .cert-card-description {
+    font-size: 0.95rem;
+  }
+  .cert-card-button {
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* Extra small devices (phones) */
+  .cert-page-title {
+    font-size: 2rem;
+  }
+  .card-certification-img {
+    max-height: 140px;
+    padding: 0.75rem;
+  }
+  .cert-card-title {
+    font-size: 1.2rem;
+  }
+  .cert-card-description {
+    font-size: 0.9rem;
+    text-align: left; /* Maybe left align on very small screens for better readability */
+  }
+}

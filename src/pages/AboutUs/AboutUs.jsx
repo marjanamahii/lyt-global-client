@@ -15,29 +15,30 @@ import { PiMedalFill } from "react-icons/pi";
 import { GiStrong } from "react-icons/gi";
 import Achievements from "./Achievements";
 import "./AboutUs.css";
+import CertificationsPage from "../../components/CertificationsPage/CertificationsPage";
 
-const teamMembers = [
-  { name: "Mst Sharmily Athia Shamme", title: "Director" },
-  { name: "Jabir Ahmed Khan", title: "General Manager" },
-  { name: "Mohammad Nahidur Rahman", title: "HR Officer" },
-  { name: "Sheikh Afif", title: "HR Officer" },
-  { name: "Md Aminul Islam", title: "Business Consultant" },
-  { name: "Deniel Santiago", title: "Business Consultant" },
-  { name: "Christina Argon", title: "Business Consultant" },
-  { name: "Saidur Rahman Khan", title: "Sales Executive" },
-  { name: "Hasnat Khan", title: "Sales Executive" },
-  { name: "Jannatul Reshma", title: "Legal Associate" },
-  { name: "Abdullah Sujon", title: "Legal Associate" },
-  { name: "Shahin Alom Sunny", title: "Student Consultant" },
-  { name: "Iftiker Ahmed Siddiqi", title: "Student Consultant" },
-  { name: "Khayrul Islam", title: "Student Consultant" },
-  { name: "Abdul Wadud", title: "Student Consultant" },
-  { name: "Dulal Ahmed", title: "Student Consultant" },
-  { name: "Farzana Islam", title: "Student Consultant" },
-  { name: "Momin Ahmed", title: "Sales Agent" },
-  { name: "Juwel Ahmed", title: "Sales Agent" },
-  { name: "Marjana Begum", title: "Business Development Executive" },
-];
+// const teamMembers = [
+//   { name: "Mst Sharmily Athia Shamme", title: "Director" },
+//   { name: "Jabir Ahmed Khan", title: "General Manager" },
+//   { name: "Mohammad Nahidur Rahman", title: "HR Officer" },
+//   { name: "Sheikh Afif", title: "HR Officer" },
+//   { name: "Md Aminul Islam", title: "Business Consultant" },
+//   { name: "Deniel Santiago", title: "Business Consultant" },
+//   { name: "Christina Argon", title: "Business Consultant" },
+//   { name: "Saidur Rahman Khan", title: "Sales Executive" },
+//   { name: "Hasnat Khan", title: "Sales Executive" },
+//   { name: "Jannatul Reshma", title: "Legal Associate" },
+//   { name: "Abdullah Sujon", title: "Legal Associate" },
+//   { name: "Shahin Alom Sunny", title: "Student Consultant" },
+//   { name: "Iftiker Ahmed Siddiqi", title: "Student Consultant" },
+//   { name: "Khayrul Islam", title: "Student Consultant" },
+//   { name: "Abdul Wadud", title: "Student Consultant" },
+//   { name: "Dulal Ahmed", title: "Student Consultant" },
+//   { name: "Farzana Islam", title: "Student Consultant" },
+//   { name: "Momin Ahmed", title: "Sales Agent" },
+//   { name: "Juwel Ahmed", title: "Sales Agent" },
+//   { name: "Marjana Begum", title: "Business Development Executive" },
+// ];
 
 const AboutUs = () => {
   return (
@@ -177,36 +178,31 @@ const AboutUs = () => {
       </section>
 
       {/* Team Section */}
-      <section className="team py-5" style={{ background: "#29a469" }}>
+      {/* <section className="team py-5" style={{ background: "#29a469" }}>
         <Container className="my-5">
           <h2 className="text-center text-white  mb-5">Meet the Team</h2>
           <Row className="justify-content-start">
             {teamMembers.map((member, index) => (
               <Col key={index} md={3} sm={6} className="mb-4">
                 <div className="custom-team-card team-member-box text-center p-3 h-100 d-flex flex-column justify-content-center">
-                  {/* OverlayTrigger for Name (shows full name on hover) */}
                   <OverlayTrigger
-                    placement="top" // Position of the tooltip (top, bottom, left, right)
-                    delay={{ show: 250, hide: 400 }} // Delay in ms for showing/hiding tooltip
+                    placement="top"
+                    delay={{ show: 250, hide: 400 }}
                     overlay={
                       <Tooltip id={`tooltip-name-${index}`}>
                         {" "}
-                        {/* Unique ID is important */}
                         {member.name}
                       </Tooltip>
                     }
                   >
                     <h5 className="mb-1 team-name-display">{member.name}</h5>
                   </OverlayTrigger>
-
-                  {/* OverlayTrigger for Title (shows full title on hover) */}
                   <OverlayTrigger
-                    placement="bottom" // Can place below for title
+                    placement="bottom"
                     delay={{ show: 250, hide: 400 }}
                     overlay={
                       <Tooltip id={`tooltip-title-${index}`}>
                         {" "}
-                        {/* Unique ID is important */}
                         {member.title}
                       </Tooltip>
                     }
@@ -220,9 +216,9 @@ const AboutUs = () => {
             ))}
           </Row>
         </Container>
-      </section>
+      </section> */}
       <section>
-        <Achievements></Achievements>
+        <CertificationsPage></CertificationsPage>
       </section>
 
       {/* Call-to-Action Section */}

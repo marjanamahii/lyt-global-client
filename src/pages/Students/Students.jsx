@@ -23,6 +23,8 @@ import i16 from "../../assets/images/lyt-logo.jpg";
 import i18 from "../../assets/images/lyt-logo.jpg";
 import i19 from "../../assets/images/lyt-logo.jpg";
 import i20 from "../../assets/unilist/law.png";
+import sheffield from "../../assets/unilist/University-of-Sheffield.png";
+import leeds from "../../assets/unilist/leeds.png";
 import i21 from "../../assets/images/lyt-logo.jpg";
 import i22 from "../../assets/images/lyt-logo.jpg";
 import i23 from "../../assets/images/lyt-logo.jpg";
@@ -357,6 +359,62 @@ const Students = () => {
                       </p>
                       <a
                         href="https://www.gcu.ac.uk/"
+                        target={"_blank"}
+                        rel="noreferrer"
+                        className="primaryBtn"
+                      >
+                        Details
+                      </a>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
+              </div>
+            </div>
+            <div className="col-xl-3 col-sm-6 col-12">
+              <div className="d-flex">
+                <Accordion alwaysOpen>
+                  <Accordion.Item eventKey="0">
+                    <Accordion.Header>
+                      <img className="w-50" src={sheffield} alt="" />
+                    </Accordion.Header>
+                    <Accordion.Body className="accordion-body-custom">
+                      <p>
+                        Our award-winning International Student Support team is
+                        ready to guide you through your application. Join a
+                        world top 100 university known for its cutting-edge
+                        research and vibrant, welcoming city environment. Apply
+                        today!
+                      </p>
+                      <a
+                        href="https://sheffield.ac.uk/"
+                        target={"_blank"}
+                        rel="noreferrer"
+                        className="primaryBtn"
+                      >
+                        Details
+                      </a>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
+              </div>
+            </div>
+            <div className="col-xl-3 col-sm-6 col-12">
+              <div className="d-flex">
+                <Accordion alwaysOpen>
+                  <Accordion.Item eventKey="0">
+                    <Accordion.Header>
+                      <img className="w-50" src={leeds} alt="" />
+                    </Accordion.Header>
+                    <Accordion.Body className="accordion-body-custom">
+                      <p>
+                        Join the global community at a world top 75 university
+                        with outstanding facilities and academic excellence. Our
+                        dedicated team is here to support international students
+                        through every stage of the application process. Apply
+                        now!
+                      </p>
+                      <a
+                        href="https://www.leeds.ac.uk/"
                         target={"_blank"}
                         rel="noreferrer"
                         className="primaryBtn"
