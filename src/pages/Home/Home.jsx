@@ -4,7 +4,7 @@ import HeaderNav from "../../components/Shared/HeaderNav/HeaderNav";
 import VideoBanner from "../../components/VideoBanner/VideoBanner";
 import CounterSection from "../../components/CounterSection/CounterSection";
 import Gallery from "../../components/Gallery/Gallery";
-import Partners from "../../components/Partners/Parteners";
+// import Partners from "../../components/Partners/Parteners";
 import FAQS from "../../components/FAQS/FAQS";
 import SearchBar from "../../components/SearchBar/SearchBar";
 
@@ -17,7 +17,7 @@ const Home = () => {
       <HeaderNav></HeaderNav>
       <VideoBanner></VideoBanner>
       <SearchBar></SearchBar>
-      <Partners></Partners>
+      {/* <Partners></Partners> */}
       <CounterSection></CounterSection>
       {/* <Gallery></Gallery> */}
       <FAQS></FAQS>

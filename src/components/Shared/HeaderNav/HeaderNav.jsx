@@ -136,11 +136,11 @@ function HeaderNav() {
               <Link className="myNav" to="/career">
                 Career
               </Link>
-              {/* <Link className="myNav" to="/register">
+              <Link className="myNav" to="/register">
                 Register
-              </Link> */}
+              </Link>
 
-              {/* {user ? (
+              {user ? (
                 <>
                   <Image
                     onClick={handleDropDownToggle}
@@ -195,7 +195,7 @@ function HeaderNav() {
                 >
                   Login
                 </a>
-              )} */}
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>
