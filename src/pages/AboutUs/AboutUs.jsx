@@ -217,7 +217,9 @@ const AboutUs = () => {
           </Row>
         </Container>
       </section> */}
-      <section>{/* <CertificationsPage></CertificationsPage> */}</section>
+      <section>
+        <CertificationsPage></CertificationsPage>
+      </section>
 
       {/* Call-to-Action Section */}
       <section className="cta py-5">
