@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-// 🚨 Path adjust korte hobe. Jemon aage bola hoyeche: import NahidulIslamPhoto from "../../../assets/images/nahidul-islam.jpg";
 import NahidulIslamPhoto from "../../assets/images/nahidul-islam.jpg";
 import "./Founder.css";
 
@@ -21,10 +20,8 @@ function Founder() {
   return (
     <div className="founder-profile-page py-5">
       <Container>
-        {/* Shob content ke ekta single column-e justify kora holo */}
         <Row className="justify-content-center">
           <Col lg={9} md={10} sm={12}>
-            {/* === 1. PHOTO AND BASIC INFO (Upore) === */}
             <div className="text-center mb-5 founder-intro-section">
               <img
                 src={nahidulData.image}
@@ -38,7 +35,6 @@ function Founder() {
               </p>
             </div>
 
-            {/* === 2. PROFILE OVERVIEW (Full Width) === */}
             <h3 className="section-heading">Profile Overview</h3>
             <p className="profile-text">
               Nahidul Islam is a visionary young entrepreneur from Sylhet,
@@ -58,9 +54,7 @@ function Founder() {
               empowers individuals and businesses to achieve global success.
             </p>
 
-            <hr className="my-5" />
-
-            {/* === 3. ENTREPRENEURIAL JOURNEY & LEADERSHIP VISION (Por Por) === */}
+            {/* <hr className="my-5" /> */}
 
             <h3 className="section-heading">Entrepreneurial Journey</h3>
             <p>
@@ -91,7 +85,7 @@ function Founder() {
               ))}
             </ul>
 
-            <hr className="my-5" />
+            {/* <hr className="my-5" /> */}
 
             {/* === 4. COMMUNITY & FUTURE OUTLOOK (Por Por) === */}
 
