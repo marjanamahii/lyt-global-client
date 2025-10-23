@@ -1,0 +1,92 @@
+/* Founder.css */
+
+.founder-profile-page {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+/* --- Photo Styling (Single Profile) --- */
+.profile-photo {
+  /* Photo size boro kora holo */
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 5px;
+  border: 3px solid #4caf50; /* Professional border */
+  margin: 0 auto; /* Center align */
+  display: block;
+}
+
+.founder-name {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #4caf50;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.founder-title {
+  font-size: 1.1rem;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.established-info {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* --- Text Styling --- */
+.section-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #4caf50;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 25px;
+  text-align: left; /* Text shob left-aligned thakbe */
+}
+
+.profile-text,
+p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #495057;
+  text-align: justify;
+}
+
+.vision-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.vision-list li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  /* background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="%231e3a8a" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>')
+    no-repeat left 5px; */
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="%4caf50" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>')
+    no-repeat left 5px;
+  background-size: 1em;
+  padding-left: 1.5em;
+}
+
+/* Mobile Adjustments (Shob kichu center) */
+@media (max-width: 767.98px) {
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+  }
+  .founder-intro-section,
+  .section-heading {
+    text-align: center;
+  }
+  .profile-text,
+  p {
+    text-align: left;
+  }
+}
