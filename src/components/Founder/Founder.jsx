@@ -41,13 +41,13 @@ function Founder() {
             {/* === 2. PROFILE OVERVIEW (Full Width) === */}
             <h3 className="section-heading">Profile Overview</h3>
             <p className="profile-text">
-              Nahidul Islam is a visionary young entrepreneur from **Sylhet,
-              Bangladesh** — a city renowned for its natural beauty, cultural
+              Nahidul Islam is a visionary young entrepreneur from Sylhet,
+              Bangladesh — a city renowned for its natural beauty, cultural
               harmony, and entrepreneurial spirit. He is the Founder and
-              Proprietor of **LYT GLOBAL**, a rapidly growing international
-              consultancy firm that operates across the **United Kingdom,
-              Canada, the United States, Malaysia, Australia, the United Arab
-              Emirates, and Europe.**
+              Proprietor of LYT GLOBAL, a rapidly growing international
+              consultancy firm that operates across the United Kingdom, Canada,
+              the United States, Malaysia, Australia, the United Arab Emirates,
+              and Europe.
             </p>
             <p className="profile-text mb-4">
               With a mission to redefine trust and accuracy in the global
@@ -75,8 +75,8 @@ function Founder() {
               Under his dynamic leadership, a dedicated and visionary team
               operates from multiple countries, ensuring seamless coordination
               and consistent service quality across borders. This global
-              structure reflects LYT GLOBAL’s founding principles of **Trust and
-              Accuracy**, setting new benchmarks in the consultancy industry.
+              structure reflects LYT GLOBAL’s founding principles of Trust and
+              Accuracy, setting new benchmarks in the consultancy industry.
             </p>
 
             <h3 className="section-heading mt-5">Leadership Vision</h3>
@@ -106,12 +106,12 @@ function Founder() {
               promote education, health, and youth empowerment.
             </p>
             <p className="mb-4">
-              A frequent **blood donor**, Nahidul has donated blood many times
-              and continually inspires others to take part in life-saving acts
-              of generosity. Through LYT GLOBAL’s Corporate Social
-              Responsibility (CSR) initiatives, Nahidul personally invests in
-              community upliftment, educational support, and youth
-              capacity-building projects.
+              A frequent blood donor, Nahidul has donated blood many times and
+              continually inspires others to take part in life-saving acts of
+              generosity. Through LYT GLOBAL’s Corporate Social Responsibility
+              (CSR) initiatives, Nahidul personally invests in community
+              upliftment, educational support, and youth capacity-building
+              projects.
             </p>
 
             <h3 className="section-heading mt-5">Future Outlook</h3>
