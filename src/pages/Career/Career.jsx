@@ -32,7 +32,7 @@ function Career() {
     //   ],
     // },
     {
-      title: "Services Development Executive",
+      title: "Business Development Executive",
       location: "London, UK",
       type: "Full-Time",
       salary: "Competitive",
@@ -49,24 +49,24 @@ function Career() {
         "Please send your CV and a brief cover letter outlining your relevant experience and why you are interested in this role to:",
       applyEmail: "info@lyt-global.com",
     },
-    {
-      title: "Office Assistant",
-      location: "Hyderabad,India",
-      type: "Full-Time",
-      salary: "Competitive",
-      description:
-        "We're looking for an organized and proactive Office Assistant to join our team in Hyderabad. You'll be the backbone of our daily operations, ensuring the office runs smoothly and efficiently. Your responsibilities will include managing administrative tasks, supporting various departments, and maintaining a positive work environment.",
-      requirements: [
-        " - Proven experience in an administrative or office assistant role.",
-        " - Excellent organizational and time management skills.",
-        " - Proficient in Microsoft Office Suite (Word, Excel, Outlook).",
-        " - Strong communication and interpersonal abilities.",
-        " - Ability to multitask and prioritize tasks effectively.",
-      ],
-      applyInstructions:
-        "Please send your CV and a brief cover letter outlining your relevant experience and why you are interested in this role to:",
-      applyEmail: "info@lyt-global.com",
-    },
+    // {
+    //   title: "Office Assistant",
+    //   location: "Hyderabad,India",
+    //   type: "Full-Time",
+    //   salary: "Competitive",
+    //   description:
+    //     "We're looking for an organized and proactive Office Assistant to join our team in Hyderabad. You'll be the backbone of our daily operations, ensuring the office runs smoothly and efficiently. Your responsibilities will include managing administrative tasks, supporting various departments, and maintaining a positive work environment.",
+    //   requirements: [
+    //     " - Proven experience in an administrative or office assistant role.",
+    //     " - Excellent organizational and time management skills.",
+    //     " - Proficient in Microsoft Office Suite (Word, Excel, Outlook).",
+    //     " - Strong communication and interpersonal abilities.",
+    //     " - Ability to multitask and prioritize tasks effectively.",
+    //   ],
+    //   applyInstructions:
+    //     "Please send your CV and a brief cover letter outlining your relevant experience and why you are interested in this role to:",
+    //   applyEmail: "info@lyt-global.com",
+    // },
     {
       title: "Student Consultant",
       location: "Sylhet, BD",
