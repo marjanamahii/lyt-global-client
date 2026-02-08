@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import {
   Container,
   Row,
@@ -8,316 +8,354 @@ import {
   Form,
   InputGroup,
   Modal,
+  Badge,
 } from "react-bootstrap";
 import {
   FaBriefcase,
   FaMapMarkerAlt,
   FaClock,
-  FaMoneyCheck,
+  FaEnvelope,
+  FaSearch,
+  FaArrowRight,
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-function Career() {
-  const jobListings = [
-    // {
-    //   title: "Frontend Developer",
-    //   location: "London, UK",
-    //   type: "Full-Time",
-    //   description:
-    //     "We're looking for a skilled React developer to join our growing team. You'll be responsible for developing dynamic web applications, collaborating with the backend team, and improving UI/UX.",
-    //   requirements: [
-    //     "Proficient in React.js, JavaScript, and TypeScript.",
-    //     "Experience with RESTful APIs and state management (Redux).",
-    //     "Strong knowledge of responsive design.",
-    //   ],
-    // },
-    {
-      title: "Business Development Executive",
-      location: "London, UK",
-      type: "Full-Time",
-      salary: "Competitive",
-      description:
-        "We're seeking a highly motivated Services Development Executive to join our team in London. You'll be responsible for identifying new Services opportunities, building strong client relationships, and driving revenue growth. This role requires a proactive approach to sales and a deep understanding of market dynamics.",
-      requirements: [
-        " - Proven experience in Services development, sales, or a related field.",
-        " - Excellent communication, negotiation, and interpersonal skills.",
-        " - Ability to identify and cultivate new leads and opportunities.",
-        " - Strong understanding of sales principles and customer relationship management.",
-        " - Self-motivated with a results-driven approach.",
-      ],
-      applyInstructions:
-        "Please send your CV and a brief cover letter outlining your relevant experience and why you are interested in this role to:",
-      applyEmail: "info@lyt-global.com",
-    },
-    // {
-    //   title: "Office Assistant",
-    //   location: "Hyderabad,India",
-    //   type: "Full-Time",
-    //   salary: "Competitive",
-    //   description:
-    //     "We're looking for an organized and proactive Office Assistant to join our team in Hyderabad. You'll be the backbone of our daily operations, ensuring the office runs smoothly and efficiently. Your responsibilities will include managing administrative tasks, supporting various departments, and maintaining a positive work environment.",
-    //   requirements: [
-    //     " - Proven experience in an administrative or office assistant role.",
-    //     " - Excellent organizational and time management skills.",
-    //     " - Proficient in Microsoft Office Suite (Word, Excel, Outlook).",
-    //     " - Strong communication and interpersonal abilities.",
-    //     " - Ability to multitask and prioritize tasks effectively.",
-    //   ],
-    //   applyInstructions:
-    //     "Please send your CV and a brief cover letter outlining your relevant experience and why you are interested in this role to:",
-    //   applyEmail: "info@lyt-global.com",
-    // },
-    {
-      title: "Student Consultant",
-      location: "Sylhet, BD",
-      type: "Full-Time",
-      salary: "Competitive",
-      description:
-        "We're seeking an enthusiastic and knowledgeable Student Consultant to join our team in Sylhet. You'll be instrumental in guiding students through their academic journeys, providing expert advice on course selection, university applications, and career pathways. This role requires strong communication skills and a genuine passion for helping students achieve their educational goals.",
-      requirements: [
-        " - Experience in educational consulting, advising, or a related field.",
-        " - Excellent interpersonal and active listening skills.",
-        " - Strong understanding of various educational systems and admission processes.",
-        " - Ability to empathize with students and provide personalized guidance.",
-        " - Proficient in conducting research and presenting information clearly.",
-      ],
-      applyInstructions:
-        "Please send your CV and a brief cover letter outlining your relevant experience and why you are interested in this role to:",
-      applyEmail: "info@lyt-global.com",
-    },
-    // {
-    //   title: "UI/UX Designer",
-    //   location: "New York, USA",
-    //   type: "Contract",
-    //   description:
-    //     "Help us design engaging and intuitive user interfaces for our applications. Collaborate with developers and stakeholders to deliver user-centered designs.",
-    //   requirements: [
-    //     "Expertise in design tools like Figma or Adobe XD.",
-    //     "Strong understanding of user experience principles.",
-    //     "Experience conducting user research and usability testing.",
-    //   ],
-    // },
-  ];
+/**
+ * BRAND COLORS:
+ * Te Papa Green: #203A43 (Deep, professional)
+ * Shamrock: #40E687 (Vibrant, growth)
+ * Wild Sand: #F4F4F4 (Clean background)
+ */
 
-  const [searchTerm, setSearchTerm] = useState("");
-  const [filteredJobs, setFilteredJobs] = useState(jobListings);
+const jobListings = [
+  {
+    title: "Sales & Marketing Executive",
+    location: "London, UK",
+    type: "Full-Time",
+    salary: "Competitive + Commission",
+    description:
+      "We're seeking a dynamic Sales & Marketing Executive to join our UK office. You will drive revenue growth through strategic sales initiatives, develop marketing campaigns, and build lasting client relationships in the education sector. This role requires a proactive individual with a passion for achieving targets and expanding market presence.",
+    requirements: [
+      "Proven experience in sales and marketing, preferably in education or services sector.",
+      "Excellent communication, negotiation, and presentation skills.",
+      "Ability to develop and execute marketing strategies.",
+      "Strong analytical skills and results-driven mindset.",
+      "Experience with CRM systems and digital marketing tools.",
+    ],
+    applyInstructions:
+      "Please send your CV and a brief cover letter outlining your relevant experience and why you are interested in this role to:",
+    applyEmail: "info@lyt-global.com",
+  },
+  {
+    title: "Student Counsellor",
+    location: "Sylhet, Bangladesh",
+    type: "Full-Time",
+    salary: "Competitive",
+    description:
+      "Join our Bangladesh office as a Student Counsellor and play a pivotal role in guiding students towards their academic dreams. You'll provide personalized counseling, assist with university applications, course selection, and help students navigate their educational pathways with expert advice and support.",
+    requirements: [
+      "Experience in educational counseling, student advising, or related field.",
+      "Excellent interpersonal and active listening skills.",
+      "Strong understanding of international education systems and admission processes.",
+      "Ability to empathize with students and provide personalized guidance.",
+      "Proficiency in English and Bengali languages.",
+    ],
+    applyInstructions:
+      "Please send your CV and a brief cover letter outlining your relevant experience and why you are interested in this role to:",
+    applyEmail: "info@lyt-global.com",
+  },
+];
+
+export default function Career() {
+  const [query, setQuery] = useState("");
   const [showModal, setShowModal] = useState(false);
   const [selectedJob, setSelectedJob] = useState(null);
+  const navigate = useNavigate();
 
-  const handleSearchChange = (e) => {
-    const value = e.target.value.toLowerCase();
-    setSearchTerm(value);
-    const filtered = jobListings.filter(
+  const filteredJobs = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    if (!q) return jobListings;
+    return jobListings.filter(
       (job) =>
-        job.title.toLowerCase().includes(value) ||
-        job.location.toLowerCase().includes(value) ||
-        job.type.toLowerCase().includes(value)
+        job.title.toLowerCase().includes(q) ||
+        job.location.toLowerCase().includes(q) ||
+        (job.type || "").toLowerCase().includes(q)
     );
-    setFilteredJobs(filtered);
-  };
+  }, [query]);
 
   const handleShowDetails = (job) => {
     setSelectedJob(job);
     setShowModal(true);
   };
 
-  // const handleApplyNow = () => {
-  //   alert(
-  //     "Application form will open (connect it to your backend or redirect to an application form)."
-  //   );
-  // };
-
-  const navigate = useNavigate();
-
-  const handleApplyNow = () => {
+  const handleApplyClick = (job) => {
+    if (job?.applyEmail) {
+      const subject = encodeURIComponent(`Application for ${job.title}`);
+      window.location.href = `mailto:${job.applyEmail}?subject=${subject}`;
+      return;
+    }
     navigate("/career/apply");
   };
 
   return (
-    <div className="mt-2">
-      <div className="container-fluid mt-5 bg-light bg-gradient shadow">
-        <div
-          className="p-4 p-md-5 mb-4 text-white rounded featured"
-          style={{ backgroundColor: "#29a469" }}
-        >
-          <div className="col-md-12 px-0">
-            <h1 className="pt-5 display-4 font-italic text-center">Career</h1>
+    <main style={{ backgroundColor: "#F4F4F4", minHeight: "100vh" }}>
+      {/* --- HERO SECTION --- */}
+      <section 
+        className="position-relative text-white overflow-hidden"
+        style={{
+          background: "linear-gradient(135deg, #203A43 0%, #2C5364 100%)",
+          padding: "120px 0 80px",
+          marginBottom: "40px"
+        }}
+      >
+        {/* Subtle Background Pattern/Overlay */}
+        <div 
+          style={{
+            position: "absolute",
+            top: 0, left: 0, right: 0, bottom: 0,
+            opacity: 0.1,
+            backgroundImage: `url('https://www.transparenttextures.com/patterns/carbon-fibre.png')`,
+            pointerEvents: "none"
+          }}
+        />
+        
+        <Container className="position-relative text-center">
+          <Badge bg="success" className="mb-3 px-3 py-2 text-uppercase fw-bold" style={{ backgroundColor: "#40E687", color: "#203A43" }}>
+            We're Hiring
+          </Badge>
+          <h1 className="display-3 fw-bold mb-3">Shape the Future with Us</h1>
+          <p className="lead opacity-75 mx-auto mb-5" style={{ maxWidth: "700px" }}>
+            Join LYT Global and help us build intelligent solutions for a more connected world. 
+            Discover your next career move below.
+          </p>
+
+          {/* Integrated Search Bar */}
+          <div className="d-flex justify-content-center">
+            <div className="shadow-lg p-2 rounded-pill bg-white" style={{ maxWidth: "600px", width: "100%" }}>
+              <InputGroup className="border-0">
+                <InputGroup.Text className="bg-transparent border-0 ps-4">
+                  <FaSearch className="text-muted" />
+                </InputGroup.Text>
+                <Form.Control
+                  className="border-0 shadow-none py-2"
+                  placeholder="Search by role or location..."
+                  aria-label="Search jobs"
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                />
+                <Button 
+                  className="rounded-pill px-4 ms-2"
+                  style={{ backgroundColor: "#203A43", border: "none" }}
+                >
+                  Find Jobs
+                </Button>
+              </InputGroup>
+            </div>
           </div>
+        </Container>
+      </section>
+
+      {/* --- JOB LISTINGS --- */}
+      <Container className="pb-5">
+        <div className="d-flex align-items-center justify-content-between mb-4">
+          <h2 className="h3 fw-bold text-dark mb-0">Vacant Positions</h2>
+          <span className="text-muted">{filteredJobs.length} opportunities found</span>
         </div>
-      </div>
-      <Container className="">
-        <h1 className="text-center mb-4 text-uppercase font-bold">
-          Join Our Team
-        </h1>
-        <p className="text-center text-muted mb-5">
-          We are looking for talented individuals who are passionate about
-          innovation and creativity. Find your next career opportunity below.
-        </p>
 
-        {/* Search Bar */}
-        <InputGroup className="mb-4 w-50 mx-auto gap-2">
-          <Form.Control
-            type="text"
-            placeholder="Search by title, location, or job type"
-            value={searchTerm}
-            onChange={handleSearchChange}
-          />
-          <Button className="primaryBtn">Search</Button>
-        </InputGroup>
-
-        {/* Job Listings */}
-        <Row>
+        <Row xs={1} md={2} lg={2} className="g-4 justify-content-center">
           {filteredJobs.length > 0 ? (
-            filteredJobs.map((job, index) => (
-              <Col md={4} key={index} className="mb-4">
-                <Card className="shadow-sm border-0">
-                  <Card.Body>
-                    <Card.Title>
-                      <FaBriefcase className="me-2" />
+            filteredJobs.map((job, idx) => (
+              <Col key={idx} lg={6} md={6}>
+                <Card 
+                  className="h-100 border-0 shadow-sm transition-hover" 
+                  style={{ 
+                    borderRadius: "16px",
+                    transition: "transform 0.2s ease, box-shadow 0.2s ease",
+                    cursor: "pointer",
+                    borderLeft: `5px solid ${job.location.includes('UK') ? '#40E687' : '#203A43'}`
+                  }}
+                  onClick={() => handleShowDetails(job)}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = "translateY(-5px)";
+                    e.currentTarget.style.boxShadow = "0 10px 20px rgba(0,0,0,0.1)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = "translateY(0)";
+                    e.currentTarget.style.boxShadow = "0 4px 6px rgba(0,0,0,0.05)";
+                  }}
+                >
+                  <Card.Body className="p-4 d-flex flex-column">
+                    <div className="mb-3">
+                      <Badge 
+                        className="me-2" 
+                        style={{ 
+                          backgroundColor: job.location.includes('UK') ? "#E8F5E9" : "#E3F2FD", 
+                          color: job.location.includes('UK') ? "#2E7D32" : "#1976D2"
+                        }}
+                      >
+                        <FaMapMarkerAlt className="me-1" /> {job.location}
+                      </Badge>
+                      <Badge 
+                        style={{ 
+                          backgroundColor: "#FFF3E0", 
+                          color: "#F57C00"
+                        }}
+                      >
+                        <FaBriefcase className="me-1" /> {job.type}
+                      </Badge>
+                    </div>
+
+                    <Card.Title className="fw-bold mb-3 h4" style={{ color: "#203A43" }}>
                       {job.title}
                     </Card.Title>
-                    <Card.Subtitle className="text-muted mb-2">
-                      <FaMapMarkerAlt className="me-2" />
-                      {job.location} &nbsp;&nbsp;
-                      <FaClock className="me-2" />
-                      {job.type}
-                      {/* <FaMoneyCheck className="me-2" />
-                      {job.salary} */}
-                    </Card.Subtitle>
-                    <Card.Text>{job.description.substring(0, 80)}...</Card.Text>
-                    <Button
-                      variant="dark"
-                      className="me-2"
-                      onClick={() => handleShowDetails(job)}
-                    >
-                      Details
-                    </Button>
-                    {/* <Button className="primaryBtn" onClick={handleApplyNow}>
-                      Apply Now
-                    </Button> */}
+                    
+                    <div className="mb-3">
+                      <h6 className="text-muted">For the {job.location.includes('UK') ? 'UK Office' : 'Bangladesh Office'}</h6>
+                    </div>
+
+                    <Card.Text className="text-muted mb-4" style={{ fontSize: "0.95rem", flex: 1 }}>
+                      {job.description.substring(0, 140)}...
+                    </Card.Text>
+
+                    <div className="mt-auto pt-3 border-top d-flex align-items-center justify-content-between">
+                      <span className="fw-bold" style={{ color: "#203A43" }}>{job.salary}</span>
+                      <Button 
+                        variant="link" 
+                        className="p-0 text-decoration-none fw-bold d-flex align-items-center"
+                        style={{ color: "#203A43" }}
+                      >
+                        View Details <FaArrowRight size={12} className="ms-2" />
+                      </Button>
+                    </div>
                   </Card.Body>
                 </Card>
               </Col>
             ))
           ) : (
-            <Col>
-              <p className="text-center text-muted">
-                No jobs match your search criteria.
-              </p>
+            <Col xs={12}>
+              <div className="p-5 text-center bg-white rounded-4 shadow-sm">
+                <p className="mb-0 text-muted">No positions match your current search.</p>
+              </div>
             </Col>
           )}
         </Row>
+      </Container>
 
-        {/* Job Details Modal */}
-        <Modal show={showModal} onHide={() => setShowModal(false)}>
-          <Modal.Header closeButton>
-            <Modal.Title>{selectedJob?.title}</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <h5>Location: {selectedJob?.location}</h5>
-            <p>
-              <strong>Type:</strong> {selectedJob?.type}
-            </p>
-            <p>{selectedJob?.description}</p>
-            <h6 className="mt-2 font-bold">Requirements:</h6>
-            <ul>
-              {selectedJob?.requirements.map((req, index) => (
-                <li key={index}>{req}</li>
+      {/* --- FOOTER SECTION --- */}
+      <footer 
+        style={{ 
+          backgroundColor: "#203A43",
+          color: "white",
+          padding: "60px 0 30px",
+          marginTop: "80px"
+        }}
+      >
+        <Container>
+          <Row className="text-center text-md-start">
+            <Col md={6} className="mb-4">
+              <h4 className="fw-bold mb-3">Join Our Team</h4>
+              <p className="opacity-75" style={{ maxWidth: "500px" }}>
+                At LYT Global, we believe in nurturing talent and providing opportunities 
+                for growth. If you don't see a position that matches your skills but believe 
+                you can contribute, send us your CV at:
+              </p>
+              <a 
+                href="mailto:careers@lyt-global.com" 
+                className="text-decoration-none fw-bold d-inline-flex align-items-center mt-2"
+                style={{ color: "#40E687" }}
+              >
+                <FaEnvelope className="me-2" /> careers@lyt-global.com
+              </a>
+            </Col>
+            <Col md={6} className="mb-4">
+              <h5 className="fw-bold mb-3">Why Work With Us?</h5>
+              <ul className="list-unstyled opacity-75">
+                <li className="mb-2">• Competitive compensation packages</li>
+                <li className="mb-2">• Professional development opportunities</li>
+                <li className="mb-2">• Collaborative work environment</li>
+                <li className="mb-2">• Make a real impact in education sector</li>
+              </ul>
+            </Col>
+          </Row>
+          <div className="text-center pt-4 mt-4 border-top border-secondary opacity-50">
+            <p className="mb-0 small">© {new Date().getFullYear()} LYT Global. All rights reserved.</p>
+          </div>
+        </Container>
+      </footer>
+
+      {/* --- JOB DETAILS MODAL --- */}
+      <Modal
+        show={showModal}
+        onHide={() => setShowModal(false)}
+        centered
+        size="lg"
+        contentClassName="border-0 shadow-lg"
+        style={{ borderRadius: "20px" }}
+      >
+        <Modal.Header closeButton className="border-0 px-4 pt-4">
+          <div>
+            <Modal.Title className="fw-bold h3" style={{ color: "#203A43" }}>
+              {selectedJob?.title}
+            </Modal.Title>
+            <div className="mt-2 text-muted">
+              <FaMapMarkerAlt className="me-1" /> {selectedJob?.location} • <FaClock className="ms-3 me-1" /> {selectedJob?.type}
+            </div>
+            <div className="mt-1">
+              <Badge 
+                bg="info" 
+                className="mt-2"
+                style={{ 
+                  backgroundColor: selectedJob?.location.includes('UK') ? "#40E687" : "#203A43",
+                  color: "white"
+                }}
+              >
+                For the {selectedJob?.location.includes('UK') ? 'UK Office' : 'Bangladesh Office'}
+              </Badge>
+            </div>
+          </div>
+        </Modal.Header>
+
+        <Modal.Body className="px-4 pb-4">
+          <div className="mb-4">
+            <h5 className="fw-bold mb-3">Description</h5>
+            <p className="text-muted leading-relaxed">{selectedJob?.description}</p>
+          </div>
+
+          <div className="mb-4">
+            <h5 className="fw-bold mb-3">Key Requirements</h5>
+            <ul className="text-muted">
+              {selectedJob?.requirements?.map((req, i) => (
+                <li key={i} className="mb-2">{req}</li>
               ))}
             </ul>
-            <h6 className="mt-2 font-bold ">To Apply:</h6>
-            {selectedJob?.applyInstructions && selectedJob?.applyEmail && (
-              <div>
-                <p className="text-black">{selectedJob.applyInstructions}</p>
-                <p>
-                  <a href={`mailto:${selectedJob.applyEmail}`}>
-                    {selectedJob.applyEmail}
-                  </a>
-                </p>
-              </div>
-            )}
-          </Modal.Body>
-          <Modal.Footer>
-            <Button variant="dark" onClick={() => setShowModal(false)}>
-              Close
-            </Button>
-            {/* <Button className="primaryBtn" onClick={handleApplyNow}>
-              Apply Now
-            </Button> */}
-            {/* <span className="text-muted fst-italic">
-              Send your CV to:{" "}
-              <a href="mailto:info@lyt-global.com">info@lyt-global.com</a>
-            </span> */}
-          </Modal.Footer>
-        </Modal>
-      </Container>
-    </div>
+          </div>
+
+          <div className="p-4 rounded-3" style={{ backgroundColor: "#F8F9FA", borderLeft: "4px solid #40E687" }}>
+            <h5 className="fw-bold h6">How to Apply</h5>
+            <p className="small text-muted mb-3">{selectedJob?.applyInstructions}</p>
+            <a 
+              href={`mailto:${selectedJob?.applyEmail}`} 
+              className="fw-bold text-decoration-none d-flex align-items-center"
+              style={{ color: "#203A43" }}
+            >
+              <FaEnvelope className="me-2" /> {selectedJob?.applyEmail}
+            </a>
+          </div>
+        </Modal.Body>
+
+        <Modal.Footer className="border-0 px-4 pb-4">
+          <Button variant="light" onClick={() => setShowModal(false)} className="px-4">
+            Close
+          </Button>
+          <Button 
+            className="px-5 border-0"
+            style={{ backgroundColor: "#203A43" }}
+            onClick={() => handleApplyClick(selectedJob)}
+          >
+            Apply Now
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </main>
   );
 }
-
-export default Career;
-// import React from "react";
-
-// function Career() {
-//   return (
-//     <div>
-//       <div className="container-fluid mt-5 bg-light bg-gradient shadow">
-//         <div
-//           className="p-4 p-md-5 mb-4 text-white rounded featured"
-//           style={{ backgroundColor: "#29a469" }}
-//         >
-//           <div className="col-md-12 px-0">
-//             <h1 className="pt-5 display-4 font-italic text-center">Careers</h1>
-//           </div>
-//         </div>
-//       </div>
-//       <section className="px-4 py-10 max-w-5xl mx-auto text-gray-800">
-//         <h2 className="text-3xl font-bold mb-6 text-center border-b pb-2">
-//           Career Opportunities
-//         </h2>
-
-//         <div className="mb-6">
-//           <h3 className="text-xl font-semibold mb-2">Vacant Positions</h3>
-//           <ul className="list-disc list-inside space-y-1">
-//             <li>
-//               Services Development Executive – <strong>London Office</strong>
-//             </li>
-//             <li>
-//               Student Consultant (2 Positions) – <strong>Sylhet Office</strong>
-//             </li>
-//             <li>
-//               Office Assistant (1 Position) – <strong>Hyderabad Office</strong>
-//             </li>
-//           </ul>
-//         </div>
-
-//         <div className="mb-6">
-//           <h3 className="text-xl font-semibold mb-2">Office Locations</h3>
-//           <p>
-//             <strong>Hyderabad Office:</strong> #3-10-5/2, Trimulgherry Cross
-//             Roads, Secunderabad, Telangana- 500 015
-//           </p>
-//           <p>
-//             <strong>Nepal Office:</strong> 3rd Floor, Opposite Hope Hospital
-//             Lane, Sinamangal Road, Kathmandu, Nepal 44600
-//           </p>
-//         </div>
-
-//         <p className="mb-2">
-//           Salary: <strong>Competitive</strong>
-//         </p>
-//         <p>
-//           To apply, send your CV to{" "}
-//           <a
-//             className="text-primary hover:underline"
-//             href="mailto:info@lyt-global.com"
-//           >
-//             info@lyt-global.com
-//           </a>
-//         </p>
-//       </section>
-//     </div>
-//   );
-// }
-
-// export default Career;
