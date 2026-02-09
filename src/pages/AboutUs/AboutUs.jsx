@@ -16,7 +16,7 @@ import { GiStrong } from "react-icons/gi";
 import Achievements from "./Achievements";
 import "./AboutUs.css";
 import CertificationsPage from "../../components/CertificationsPage/CertificationsPage";
-import Founder from "../../components/Founder/Founder";
+// import Founder from "../../components/Founder/Founder";
 
 // const teamMembers = [
 //   { name: "Mst Sharmily Athia Shamme", title: "Director" },
@@ -177,9 +177,9 @@ const AboutUs = () => {
           </Row>
         </Container>
       </section>
-      <section>
+      {/* <section>
         <Founder></Founder>
-      </section>
+      </section> */}
 
       {/* Team Section */}
       {/* <section className="team py-5" style={{ background: "#29a469" }}>
