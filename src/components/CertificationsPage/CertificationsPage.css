@@ -1,52 +1,46 @@
-/* New */
-/* --- 1. Modal Backdrop: Puro Screen Overlay --- */
+.cert-trust-banner {
+  background-color: #ffffff; /* Or #fbfbfb for a subtle contrast */
+}
+
+/* Modal Styling */
 .modal-backdrop {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.85); /* Black overlay */
+  background: rgba(0, 0, 0, 0.85);
   display: flex;
   justify-content: center;
   align-items: center;
-
-  z-index: 1050 !important;
+  z-index: 9999;
+  backdrop-filter: blur(5px);
 }
 
-/* --- 2. Modal Content: The Container for the Image --- */
 .modal-content {
-  max-width: 90vw !important; /* Modal container-ke boro kora */
-  max-height: 90vh !important;
-  padding: 15px !important;
-  overflow: auto; /* Jodi image beshi boro hoy tahole scroll korte parben */
   position: relative;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.7);
+  max-width: 90%;
+  max-height: 90%;
 }
 
-/* --- 3. Modal Image Style: Image Fit --- */
 .modal-image {
-  width: 100% !important;
-  height: auto !important;
-  max-height: 85vh !important;
-  object-fit: contain !important;
-  display: block !important;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* --- Close Button Style --- */
 .modal-close-button {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  background: white;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  font-size: 24px;
-  line-height: 20px;
+  top: -40px;
+  right: 0;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
   cursor: pointer;
-  color: #333;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  z-index: 1001;
+}
+
+.verification-link:hover {
+  color: #1a5d40 !important; /* Darker green on hover */
 }
