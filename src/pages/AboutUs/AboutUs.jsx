@@ -94,7 +94,7 @@ const AboutUs = () => {
             <Col md={6}>
               <h2 className="mb-4 text-uppercase font-bold">Our Story</h2>
               <p className="text-black">
-                <strong className="font-bold">Founded in 2024</strong>, LYT
+                <strong className="font-bold">Founded in 2023</strong>, LYT
                 GLOBAL began as a small initiative with an outsized vision: to
                 bridge personal ambition with global opportunity. Our founding
                 team recognised a consistent challenge across industries and
