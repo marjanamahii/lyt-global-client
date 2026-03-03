@@ -94,5 +94,30 @@
 .navbar {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+.free-consultation-btn {
+  background-color: #29a469; /* The green color from your screenshot */
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 50px; /* This creates the pill shape */
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: 15px;
+  cursor: pointer;
+  text-decoration: underline; /* Matches the underline in your screenshot */
+  transition: background-color 0.3s ease;
+}
 
+.free-consultation-btn:hover {
+  background-color: #29a469; /* A slightly darker green for hover effect */
+}
+
+/* Ensure the button aligns well on mobile */
+@media (max-width: 991px) {
+  .free-consultation-btn {
+    margin-left: 0;
+    margin-top: 15px;
+    width: 100%;
+  }
+}
 /* gradientLine */

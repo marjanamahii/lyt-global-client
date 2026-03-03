@@ -196,6 +196,11 @@ function HeaderNav() {
                   Login
                 </a>
               )} */}
+              <Link to="/contact" className="text-decoration-none">
+                <button className="free-consultation-btn">
+                  Free Consultation
+                </button>
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
