@@ -14,8 +14,11 @@ const Home = () => {
     <div>
       <HeaderNav></HeaderNav>
       <VideoBanner></VideoBanner>
-      <ImpactSection></ImpactSection>
-      <ServicesPage></ServicesPage>
+      <ImpactSection
+        id="impact-section"
+        style={{ paddingTop: "20px" }}
+      ></ImpactSection>
+      <ServicesPage id="/student-services"></ServicesPage>
       <ProcessAndFAQ></ProcessAndFAQ>
     </div>
   );

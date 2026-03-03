@@ -195,21 +195,34 @@ const Footer = () => {
             </p>
             <div className="d-flex gap-3">
               {[
-                faFacebookF,
-                faTwitter,
-                faLinkedinIn,
-                faInstagram,
-                faYoutube,
-              ].map((icon, idx) => (
-                <div
+                {
+                  icon: faFacebookF,
+                  link: "https://www.facebook.com/lytglobal",
+                },
+                { icon: faTwitter, link: "https://x.com/lytglobal" },
+                {
+                  icon: faLinkedinIn,
+                  link: "https://www.linkedin.com/company/lyt-global/",
+                },
+                {
+                  icon: faInstagram,
+                  link: "https://www.instagram.com/lytglobal",
+                },
+                { icon: faYoutube, link: "https://www.youtube.com/lytglobal" },
+              ].map((social, idx) => (
+                <a
                   key={idx}
-                  className="rounded-circle d-flex align-items-center justify-content-center"
+                  href={social.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-circle d-flex align-items-center justify-content-center text-white"
                   style={{
                     width: "36px",
                     height: "36px",
                     backgroundColor: "rgba(255,255,255,0.1)",
                     cursor: "pointer",
                     transition: "0.3s",
+                    textDecoration: "none",
                   }}
                   onMouseOver={(e) =>
                     (e.currentTarget.style.backgroundColor = "#29a469")
@@ -219,8 +232,8 @@ const Footer = () => {
                       "rgba(255,255,255,0.1)")
                   }
                 >
-                  <FontAwesomeIcon icon={icon} size="sm" />
-                </div>
+                  <FontAwesomeIcon icon={social.icon} size="sm" />
+                </a>
               ))}
             </div>
           </Col>
@@ -232,14 +245,14 @@ const Footer = () => {
             </h5>
             <ul className="list-unstyled">
               {[
-                "Home",
-                "Our Impact",
-                "Student Services",
-                "Business Services",
-                "Contact",
+                { name: "Home", path: "/#home" },
+                { name: "Our Impact", path: "/#impact-section" },
+                { name: "Student Services", path: "/#student-services" },
+                { name: "Business Services", path: "/#business-services" },
+                { name: "Contact", path: "/contact" },
               ].map((item) => (
                 <li
-                  key={item}
+                  key={item.name}
                   className="mb-3 d-flex align-items-center small opacity-75"
                 >
                   <FontAwesomeIcon
@@ -247,8 +260,11 @@ const Footer = () => {
                     className="me-2"
                     style={{ fontSize: "10px", color: "#29a469" }}
                   />
-                  <a href="#" className="text-white text-decoration-none">
-                    {item}
+                  <a
+                    href={item.path}
+                    className="text-white text-decoration-none"
+                  >
+                    {item.name}
                   </a>
                 </li>
               ))}

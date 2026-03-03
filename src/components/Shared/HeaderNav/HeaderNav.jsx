@@ -136,7 +136,7 @@ function HeaderNav() {
               <Link className="myNav" to="/career">
                 Career
               </Link>
-              <Link className="myNav" to="/register">
+              {/* <Link className="myNav" to="/register">
                 Register
               </Link>
 
@@ -195,7 +195,7 @@ function HeaderNav() {
                 >
                   Login
                 </a>
-              )}
+              )} */}
             </Nav>
           </Navbar.Collapse>
         </Container>

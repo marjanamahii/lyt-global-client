@@ -97,7 +97,11 @@ const ServicesPage = () => {
     <section className="py-5" style={{ backgroundColor: "var(--lyt-bg)" }}>
       <div className="container">
         {/* Section 1 Header */}
-        <div className="text-center mb-5">
+        <div
+          className="text-center mb-5"
+          id="student-services"
+          style={{ scrollMarginTop: "100px" }}
+        >
           <h2
             className="fw-bold mb-3"
             style={{ color: "var(--lyt-dark-green)", fontSize: "28px" }}

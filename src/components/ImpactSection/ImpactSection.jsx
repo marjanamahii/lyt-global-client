@@ -2,7 +2,11 @@ import React from "react";
 
 const ImpactSection = () => {
   return (
-    <section className="py-5" style={{ background: "#f4f7f6" }}>
+    <section
+      id="impact-section"
+      className="py-5"
+      style={{ background: "#f4f7f6" }}
+    >
       <div className="container text-center">
         <h2 className="mb-3 fw-bold" style={{ fontSize: "40px" }}>
           Our Global Impact & Reach

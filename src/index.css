@@ -254,3 +254,11 @@ p {
   box-shadow: none !important;
   outline: none;
 }
+
+#impact-section {
+  scroll-margin-top: 100px;
+}
+/* For other sections, apply it to all of them */
+section[id] {
+  scroll-margin-top: 100px;
+}
