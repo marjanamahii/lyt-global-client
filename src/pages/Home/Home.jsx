@@ -2,11 +2,9 @@
 import React, { useEffect } from "react";
 import HeaderNav from "../../components/Shared/HeaderNav/HeaderNav";
 import VideoBanner from "../../components/VideoBanner/VideoBanner";
-import CounterSection from "../../components/CounterSection/CounterSection";
-import Gallery from "../../components/Gallery/Gallery";
-// import Partners from "../../components/Partners/Parteners";
-import FAQS from "../../components/FAQS/FAQS";
-import SearchBar from "../../components/SearchBar/SearchBar";
+import ImpactSection from "../../components/ImpactSection/ImpactSection";
+import ServicesPage from "../../components/ServicesPage/ServicesPage";
+import ProcessAndFAQ from "../../components/ProcessAndFAQ/ProcessAndFAQ";
 
 const Home = () => {
   useEffect(() => {
@@ -16,24 +14,9 @@ const Home = () => {
     <div>
       <HeaderNav></HeaderNav>
       <VideoBanner></VideoBanner>
-      <SearchBar></SearchBar>
-      {/* <Partners></Partners> */}
-      <CounterSection></CounterSection>
-      {/* <Gallery></Gallery> */}
-      <FAQS></FAQS>
-
-      {/* <UniLogoSlider></UniLogoSlider> */}
-      {/* <OfficeLocation></OfficeLocation> */}
-      {/* <div className="container-fluid myServiceBg">
-        <Link to="ouroffice">
-          <h1 className="text-center text-white">
-            Discover All Our Office Locations
-          </h1>
-        </Link>
-      </div> */}
-      {/* <FacebookReview></FacebookReview> */}
-      {/* <CorporateSR></CorporateSR> */}
-      {/* <Footer></Footer> */}
+      <ImpactSection></ImpactSection>
+      <ServicesPage></ServicesPage>
+      <ProcessAndFAQ></ProcessAndFAQ>
     </div>
   );
 };

@@ -1,14 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Home from "../pages/Home/Home";
-import GalleryFullPhotos from "../components/GalleryFullPhotos/GalleryFullPhotos";
 import Universities from "../components/Universities/Universities";
 import ContactUs from "../pages/ContactUs/ContactUs";
 import AboutUs from "../pages/AboutUs/AboutUs";
 import Login from "../components/Login/Login";
 import Register from "../components/Register/Register";
 import Events from "../pages/Events/Events";
-import SearchBar from "../components/SearchBar/SearchBar";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import UserProfile from "../pages/Dashboard/User/UserProfile";
 import PrivateRoutes from "./PrivateRoutes";
@@ -24,7 +22,6 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { path: "/", element: <Home /> },
-      { path: "/photos", element: <GalleryFullPhotos></GalleryFullPhotos> },
       // { path: "/universities", element: <Universities></Universities> },
       { path: "/students", element: <Students></Students> },
       { path: "/contact", element: <ContactUs></ContactUs> },
@@ -32,7 +29,6 @@ const router = createBrowserRouter([
       { path: "/services", element: <Services></Services> },
       { path: "/business", element: <Business></Business> },
       { path: "/events", element: <Events></Events> },
-      { path: "/searchbar", element: <SearchBar></SearchBar> },
       { path: "/career", element: <Career></Career> },
       // { path: "/career/apply", element: <ApplicationForm></ApplicationForm> },
       {

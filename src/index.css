@@ -7,6 +7,10 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 :root {
+  --lyt-bg: #e9f5ee; /* Light mint background */
+  --lyt-dark-green: #1a5d40; /* Dark forest green for headers */
+  --lyt-primary: #29a469; /* Your existing green */
+  --lyt-card-bg: #ffffff;
   --primaryClr: #29a469;
   --secondaryClr: #fffaf9;
   --bgClr: #f8f9fd;
@@ -112,6 +116,7 @@ video {
   vertical-align: baseline;
   font-family: var(--fontFamily);
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -126,17 +131,21 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -144,6 +153,7 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -186,18 +196,6 @@ p {
 .glow-on-hover:before {
   -webkit-animation: glowing 20s linear infinite;
   animation: glowing 20s linear infinite;
-  /* background: linear-gradient(
-    45deg,
-    red,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    red
-  ); */
   background-size: 400%;
   border-radius: 10px;
   content: "";
@@ -236,8 +234,23 @@ p {
   width: 100%;
   z-index: -1;
 }
+
 .text-success {
   --bs-text-opacity: 1;
   color: rgba(41, 164, 105, var(--bs-text-opacity)) !important;
   color: #29a469 !important;
+}
+
+/* --- FOOTER SPECIFIC STYLES --- */
+
+.footer-input::placeholder {
+  color: rgba(255, 255, 255, 0.4) !important;
+  font-size: 0.85rem;
+}
+
+.footer-input:focus {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  box-shadow: none !important;
+  outline: none;
 }
