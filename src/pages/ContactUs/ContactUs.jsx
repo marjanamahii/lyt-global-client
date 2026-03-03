@@ -594,6 +594,40 @@ const ContactUs = () => {
                     <span className="small fw-bold">info@lyt-global.com</span>
                   </div>
                 </Col>
+                <Col md={6} className="d-flex align-items-center">
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    className="me-3"
+                    style={{ color: "#29a469", fontSize: "1.2rem" }}
+                  />
+                  <div>
+                    <div
+                      className="small fw-bold text-muted text-uppercase"
+                      style={{ fontSize: "10px" }}
+                    >
+                      Business Inquiry
+                    </div>
+                    <span className="small fw-bold">
+                      business@lyt-global.com
+                    </span>
+                  </div>
+                </Col>
+                <Col md={6} className="d-flex align-items-center">
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    className="me-3"
+                    style={{ color: "#29a469", fontSize: "1.2rem" }}
+                  />
+                  <div>
+                    <div
+                      className="small fw-bold text-muted text-uppercase"
+                      style={{ fontSize: "10px" }}
+                    >
+                      For Partnership
+                    </div>
+                    <span className="small fw-bold">sales@lyt-global.com</span>
+                  </div>
+                </Col>
               </Row>
             </div>
 
