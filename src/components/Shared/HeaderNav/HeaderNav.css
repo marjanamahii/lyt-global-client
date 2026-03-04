@@ -83,7 +83,7 @@
 }
 
 .search-bar-container.active .search-icon {
-  color: #d90c28; /* Highlight color when active */
+  color: #d90c28;
 }
 .navbar-brand span {
   color: #333;
@@ -95,23 +95,32 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .free-consultation-btn {
-  background-color: #29a469; /* The green color from your screenshot */
+  background-color: #29a469;
   color: white;
   border: none;
   padding: 10px 25px;
-  border-radius: 50px; /* This creates the pill shape */
+  border-radius: 50px;
   font-weight: 600;
   font-size: 16px;
   margin-left: 15px;
   cursor: pointer;
-  text-decoration: underline; /* Matches the underline in your screenshot */
-  transition: background-color 0.3s ease;
+  text-decoration: underline;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .free-consultation-btn:hover {
-  background-color: #29a469; /* A slightly darker green for hover effect */
+  background-color: #29a469;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(61, 122, 93, 0.3);
+  filter: brightness(1.05);
 }
-
+.free-consultation-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  filter: brightness(0.95);
+  transition: transform 0.1s ease;
+}
 /* Ensure the button aligns well on mobile */
 @media (max-width: 991px) {
   .free-consultation-btn {

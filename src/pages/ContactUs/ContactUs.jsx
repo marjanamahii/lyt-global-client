@@ -390,9 +390,8 @@ const ContactUs = () => {
             style={{ color: "#1a5d40", fontSize: "28px" }}
           >
             Start Your{" "}
-            <span style={{ borderBottom: "3px solid #29a469" }}>
-              Journey Today
-            </span>
+            <span style={{ borderBottom: "3px solid #29a469" }}>Jour</span>ney
+            Today
           </h2>
           <p
             className="text-muted mx-auto"

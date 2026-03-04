@@ -196,7 +196,10 @@ function HeaderNav() {
                   Login
                 </a>
               )} */}
-              <Link to="/contact" className="text-decoration-none">
+              <Link
+                to="/contact"
+                className="consultation-wrapper text-decoration-none"
+              >
                 <button className="free-consultation-btn">
                   Free Consultation
                 </button>
