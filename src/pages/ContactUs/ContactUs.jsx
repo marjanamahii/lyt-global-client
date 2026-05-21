@@ -655,7 +655,8 @@ const ContactUs = () => {
                     UK Office:
                   </div>
                   <p className="small mb-0 opacity-75 fw-semibold text-black">
-                    Unit 2, 569 Green St, London E13 9BF
+                    Backside Unit, 1st Floor, 108 Whitechapel Road, London, E1
+                    1JD
                   </p>
                 </Col>
                 <Col md={6}>
